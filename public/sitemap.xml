@@ -8,6 +8,10 @@
         <lastmod>2026-04-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/logo/401690.jpg</image:loc>
+            <image:title>HonHub - Энциклопедия Heroes of Newerth</image:title>
+        </image:image>
     </url>
     
     <!-- ========== ОСНОВНЫЕ РАЗДЕЛЫ ========== -->
@@ -75,109 +79,1033 @@
     </url>
     
     <!-- ========== ГЕРОИ ЛЕГИОН - ЛОВКОСТЬ ========== -->
-    <url><loc>https://honhub.ru/heroes/andromeda</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/engineer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/magebane</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/moa</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/monkey</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/moonqueen</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/nighthound</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/nomad</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/scout</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/silhouette</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/sirbenzington</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/swiftblade</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/valkyrie</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/vindicator</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/zephyr</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url>
+        <loc>https://honhub.ru/heroes/andromeda</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/andromeda.webp</image:loc>
+            <image:title>Андромеда - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/engineer</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/engineer.webp</image:loc>
+            <image:title>Инженер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/magebane</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/mageban.webp</image:loc>
+            <image:title>Магебайн - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/moa</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/moa.webp</image:loc>
+            <image:title>Моа - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/monkey</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/monkey.webp</image:loc>
+            <image:title>Манки - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/moonqueen</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/moonqueen.webp</image:loc>
+            <image:title>Мун Квин - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/nighthound</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/nighthound.webp</image:loc>
+            <image:title>Найтхаунд - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/nomad</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/nomad.webp</image:loc>
+            <image:title>Номад - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/scout</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/scout.webp</image:loc>
+            <image:title>Скаут - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/silhouette</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/silhouette.webp</image:loc>
+            <image:title>Силуэт - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/sirbenzington</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/sirbenzington.webp</image:loc>
+            <image:title>Сэр Бензингтон - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/swiftblade</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/swiftblade.webp</image:loc>
+            <image:title>Свифтблейд - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/valkyrie</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/valkyrie.webp</image:loc>
+            <image:title>Валькирия - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/vindicator</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/vindicator.webp</image:loc>
+            <image:title>Виндикатор - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/zephyr</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/zephyr.webp</image:loc>
+            <image:title>Зефир - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
     
     <!-- ========== ГЕРОИ ЛЕГИОН - ИНТЕЛЛЕКТ ========== -->
-    <url><loc>https://honhub.ru/heroes/aluna</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/blacksmith</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/bombardier</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/bubbles</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/ellonia</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/empath</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/martyr</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/monarch</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/nymphora</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/ophelia</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/pearl</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/pollywogpriest</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/pyromancer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/rhapsody</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/tempest</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/thechipper</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/thunderbringer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/witchslayer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url>
+        <loc>https://honhub.ru/heroes/aluna</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/aluna.webp</image:loc>
+            <image:title>Алуна - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/blacksmith</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/blacksmith.webp</image:loc>
+            <image:title>Блэксмит - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/bombardier</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/bombardier.webp</image:loc>
+            <image:title>Бомбардир - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/bubbles</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/bubbles.webp</image:loc>
+            <image:title>Баблз - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/ellonia</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/ellonia.webp</image:loc>
+            <image:title>Эллония - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/empath</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/empath.webp</image:loc>
+            <image:title>Эмпат - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/martyr</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/martyr.webp</image:loc>
+            <image:title>Мартир - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/monarch</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/monarch.webp</image:loc>
+            <image:title>Монарх - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/nymphora</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/nymphora.webp</image:loc>
+            <image:title>Нимфора - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/ophelia</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/ophelia.webp</image:loc>
+            <image:title>Офелия - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/pearl</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/pearl.webp</image:loc>
+            <image:title>Перл - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/pollywogpriest</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/pollywogpriest.webp</image:loc>
+            <image:title>Полливог - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/pyromancer</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/pyromancer.webp</image:loc>
+            <image:title>Пиромант - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/rhapsody</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/rhapsody.webp</image:loc>
+            <image:title>Рапсодия - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/tempest</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/tempest.webp</image:loc>
+            <image:title>Темпест - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/thechipper</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/thechipper.webp</image:loc>
+            <image:title>Чиппер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/thunderbringer</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/thunderbringer.webp</image:loc>
+            <image:title>Тандербрингер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/witchslayer</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/witchslayer.webp</image:loc>
+            <image:title>Витч Слэер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
     
     <!-- ========== ГЕРОИ ЛЕГИОН - СИЛА ========== -->
-    <url><loc>https://honhub.ru/heroes/armadon</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/behemoth</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/drunkenmaster</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/flux</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/hammerstorm</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/jeraziah</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/keeperoftheforest</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/legionnaire</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/midas</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/pandamonium</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/pebbles</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/predator</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/rampage</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/solstice</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/thegladiator</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/tundra</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url>
+        <loc>https://honhub.ru/heroes/armadon</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/armadon.webp</image:loc>
+            <image:title>Армадон - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/behemoth</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/behemoth.webp</image:loc>
+            <image:title>Бегемот - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/drunkenmaster</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/drunkenmaster.webp</image:loc>
+            <image:title>Дранкен Мастер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/flux</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/flux.webp</image:loc>
+            <image:title>Флакс - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/hammerstorm</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/hammerstorm.webp</image:loc>
+            <image:title>Хаммерсторм - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/jeraziah</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/jeraziah.webp</image:loc>
+            <image:title>Джеразия - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/keeperoftheforest</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/keeperoftheforest.webp</image:loc>
+            <image:title>Кипер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/legionnaire</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/legionnaire.webp</image:loc>
+            <image:title>Легионер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/midas</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/midas.webp</image:loc>
+            <image:title>Мидас - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/pandamonium</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/pandamonium.webp</image:loc>
+            <image:title>Пандамониум - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/pebbles</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/pebbles.webp</image:loc>
+            <image:title>Пеблз - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/predator</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/predator.webp</image:loc>
+            <image:title>Предатор - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/rampage</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/rampage.webp</image:loc>
+            <image:title>Рампейдж - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/solstice</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/solstice.webp</image:loc>
+            <image:title>Солстис - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/thegladiator</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/thegladiator.webp</image:loc>
+            <image:title>Гладиатор - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/tundra</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/tundra.webp</image:loc>
+            <image:title>Тундра - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
     
     <!-- ========== ГЕРОИ ХЭЛЛБОРН - ЛОВКОСТЬ ========== -->
-    <url><loc>https://honhub.ru/heroes/arachna</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/bloodhunter</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/chronos</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/corrupteddisciple</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/dampeer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/fayde</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/flintbeastwood</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/forsakenarcher</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/gemini</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/gunblade</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/madman</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/sandwraith</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/slither</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/soulstealer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url>
+        <loc>https://honhub.ru/heroes/arachna</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/arachna.webp</image:loc>
+            <image:title>Арахна - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/bloodhunter</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/bloodhunter.webp</image:loc>
+            <image:title>Бладхантер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/chronos</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/chronos.webp</image:loc>
+            <image:title>Хронос - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/corrupteddisciple</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/corrupteddisciple.webp</image:loc>
+            <image:title>Корраптед Дисипл - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/dampeer</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/dampeer.webp</image:loc>
+            <image:title>Дампер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/fayde</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/fayde.webp</image:loc>
+            <image:title>Фэйд - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/flintbeastwood</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/flintbeastwood.webp</image:loc>
+            <image:title>Флинт - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/forsakenarcher</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/forsakenarcher.webp</image:loc>
+            <image:title>Форсакен Арчер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/gemini</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/gemini.webp</image:loc>
+            <image:title>Джемини - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/gunblade</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/gunblade.webp</image:loc>
+            <image:title>Ганблейд - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/madman</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/madman.webp</image:loc>
+            <image:title>Мэдмэн - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/sandwraith</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/sandwraith.webp</image:loc>
+            <image:title>Санд Рейт - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/slither</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/slither.webp</image:loc>
+            <image:title>Слизер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/soulstealer</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/soulstealer.webp</image:loc>
+            <image:title>Соул Стилер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
     
     <!-- ========== ГЕРОИ ХЭЛЛБОРН - ИНТЕЛЛЕКТ ========== -->
-    <url><loc>https://honhub.ru/heroes/defiler</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/dementedshaman</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/doctorrepulsor</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/geomancer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/glacius</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/hellbringer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/myrmidon</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/plaguerider</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/prophet</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/puppetmaster</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/revenant</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/riftwalker</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/soulreaper</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/torturer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/voodoojester</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/wretchedhag</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url>
+        <loc>https://honhub.ru/heroes/defiler</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/defiler.webp</image:loc>
+            <image:title>Дефайлер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/dementedshaman</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/dementedshaman.webp</image:loc>
+            <image:title>Дементед Шаман - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/doctorrepulsor</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/doctorrepulsor.webp</image:loc>
+            <image:title>Доктор Репульсор - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/geomancer</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/geomancer.webp</image:loc>
+            <image:title>Геомант - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/glacius</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/glacius.webp</image:loc>
+            <image:title>Гласиус - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/hellbringer</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/hellbringer.webp</image:loc>
+            <image:title>Хеллбрингер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/myrmidon</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/myrmidon.webp</image:loc>
+            <image:title>Мирмидон - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/plaguerider</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/plaguerider.webp</image:loc>
+            <image:title>Плага Райдер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/prophet</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/prophet.webp</image:loc>
+            <image:title>Профет - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/puppetmaster</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/puppetmaster.webp</image:loc>
+            <image:title>Папет Мастер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/revenant</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/revenant.webp</image:loc>
+            <image:title>Ревенант - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/riftwalker</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/riftwalker.webp</image:loc>
+            <image:title>Рифт Вокер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/soulreaper</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/soulreaper.webp</image:loc>
+            <image:title>Соул Рипер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/torturer</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/torturer.webp</image:loc>
+            <image:title>Тортурер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/voodoojester</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/voodoojester.webp</image:loc>
+            <image:title>Вуду Джестер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/wretchedhag</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/wretchedhag.webp</image:loc>
+            <image:title>Ретчед Хаг - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
     
     <!-- ========== ГЕРОИ ХЭЛЛБОРН - СИЛА ========== -->
-    <url><loc>https://honhub.ru/heroes/accursed</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/amunra</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/deadwood</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/devourer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/electrician</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/gauntlet</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/kraken</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/lodestone</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/magmus</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/moraxus</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/pestilence</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/pharaoh</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/ravenor</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://honhub.ru/heroes/warbeast</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url>
+        <loc>https://honhub.ru/heroes/accursed</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/accursed.webp</image:loc>
+            <image:title>Акурсед - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/amunra</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/amunra.webp</image:loc>
+            <image:title>Амун Ра - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/deadwood</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/deadwood.webp</image:loc>
+            <image:title>Дедвуд - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/devourer</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/devourer.webp</image:loc>
+            <image:title>Деваурер - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/electrician</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/electrician.webp</image:loc>
+            <image:title>Электрик - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/gauntlet</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/gauntlet.webp</image:loc>
+            <image:title>Перчатка - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/kraken</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/kraken.webp</image:loc>
+            <image:title>Кракен - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/lodestone</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/lodestone.webp</image:loc>
+            <image:title>Лоудстоун - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/magmus</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/magmus.webp</image:loc>
+            <image:title>Магмус - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/moraxus</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/moraxus.webp</image:loc>
+            <image:title>Мораксус - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/pestilence</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/pestilence.webp</image:loc>
+            <image:title>Пестиленс - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/pharaoh</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/pharaoh.webp</image:loc>
+            <image:title>Фараон - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/ravenor</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/ravenor.webp</image:loc>
+            <image:title>Равенор - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes/warbeast</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://honhub.ru/images/warbeast.webp</image:loc>
+            <image:title>Вар Бист - герой Heroes of Newerth</image:title>
+        </image:image>
+    </url>
     
     <!-- ========== СТРАНИЦЫ ОБНОВЛЕНИЙ ========== -->
     <url>
