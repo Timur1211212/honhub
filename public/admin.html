@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ панель - Heroes of Newerth</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1>🛡️ Админ панель</h1>
+            <p>Управление обращениями пользователей</p>
+        </div>
+        
+        <div class="stats" id="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalCount">0</div>
+                <div class="stat-label">Всего обращений</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="newCount">0</div>
+                <div class="stat-label">Новые</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="readCount">0</div>
+                <div class="stat-label">Прочитаны</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="processedCount">0</div>
+                <div class="stat-label">Обработаны</div>
+            </div>
+        </div>
+        
+        <div class="feedback-header">
+            <h2>📨 Обращения пользователей</h2>
+            <div class="controls">
+                <div class="auto-refresh">
+                    <input type="checkbox" id="autoRefresh" checked>
+                    <label for="autoRefresh">Автообновление</label>
+                </div>
+            </div>
+        </div>
+        
+        <div id="feedbacksList">
+            <div class="empty-state">
+                <p>Загрузка обращений...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let feedbacks = [];
+        
+        async function loadFeedbacks() {
+            try {
+                const response = await fetch('/api/feedbacks');
+                feedbacks = await response.json();
+                renderFeedbacks();
+                updateStats();
+            } catch (error) {
+                console.error('Ошибка загрузки обращений:', error);
+                document.getElementById('feedbacksList').innerHTML = 
+                    '<div class="empty-state"><p>Ошибка загрузки данных</p></div>';
+            }
+        }
+        
+        function renderFeedbacks() {
+            const container = document.getElementById('feedbacksList');
+            
+            if (feedbacks.length === 0) {
+                container.innerHTML = '<div class="empty-state"><h3>📭 Обращений пока нет</h3><p>Когда пользователи начнут отправлять сообщения, они появятся здесь</p></div>';
+                return;
+            }
+            
+            // Сортируем по дате (новые первые)
+            const sortedFeedbacks = [...feedbacks].sort((a, b) => 
+                new Date(b.timestamp) - new Date(a.timestamp)
+            );
+            
+            container.innerHTML = sortedFeedbacks.map(feedback => `
+                <div class="feedback-item" data-id="${feedback.id}">
+                    <div class="feedback-header-info">
+                        <div>
+                            <h4>${escapeHtml(feedback.name)}</h4>
+                            <div class="email">📧 ${escapeHtml(feedback.email)}</div>
+                        </div>
+                        <div class="feedback-meta">
+                            <span>${formatDate(feedback.timestamp)}</span>
+                        </div>
+                    </div>
+                    <div class="feedback-message status-${feedback.status}">
+                        ${escapeHtml(feedback.message)}
+                    </div>
+                    <div class="feedback-actions">
+                        <div class="status-select">
+                            <label>Статус:</label>
+                            <select onchange="updateStatus(${feedback.id}, this.value)">
+                                <option value="new" ${feedback.status === 'new' ? 'selected' : ''}>🔴 Новое</option>
+                                <option value="read" ${feedback.status === 'read' ? 'selected' : ''}>🟡 Прочитано</option>
+                                <option value="processed" ${feedback.status === 'processed' ? 'selected' : ''}>🟢 Обработано</option>
+                            </select>
+                        </div>
+                        <button class="delete-btn" onclick="deleteFeedback(${feedback.id})">
+                            🗑️ Удалить
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function updateStats() {
+            const stats = {
+                total: feedbacks.length,
+                new: feedbacks.filter(f => f.status === 'new').length,
+                read: feedbacks.filter(f => f.status === 'read').length,
+                processed: feedbacks.filter(f => f.status === 'processed').length
+            };
+            
+            document.getElementById('totalCount').textContent = stats.total;
+            document.getElementById('newCount').textContent = stats.new;
+            document.getElementById('readCount').textContent = stats.read;
+            document.getElementById('processedCount').textContent = stats.processed;
+        }
+        
+        async function updateStatus(id, status) {
+            try {
+                const response = await fetch(`/api/feedbacks/${id}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ status })
+                });
+                
+                if (response.ok) {
+                    showNotification('Статус обновлен', 'success');
+                    await loadFeedbacks();
+                } else {
+                    showNotification('Ошибка обновления статуса', 'error');
+                }
+            } catch (error) {
+                console.error('Ошибка:', error);
+                showNotification('Ошибка обновления статуса', 'error');
+            }
+        }
+        
+        async function deleteFeedback(id) {
+            if (!confirm('Вы уверены, что хотите удалить это обращение?')) {
+                return;
+            }
+            
+            try {
+                const response = await fetch(`/api/feedbacks/${id}`, {
+                    method: 'DELETE'
+                });
+                
+                if (response.ok) {
+                    showNotification('Обращение удалено', 'success');
+                    await loadFeedbacks();
+                } else {
+                    showNotification('Ошибка удаления', 'error');
+                }
+            } catch (error) {
+                console.error('Ошибка:', error);
+                showNotification('Ошибка удаления', 'error');
+            }
+        }
+        
+        function getStatusText(status) {
+            const statusMap = {
+                'new': '🔴 Новое',
+                'read': '🔵 Прочитано',
+                'processed': '🟢 Обработано'
+            };
+            return statusMap[status] || status;
+        }
+        
+        function formatDate(timestamp) {
+            const date = new Date(timestamp);
+            return date.toLocaleString('ru-RU', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function showNotification(message, type = 'success') {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+        
+        // Автообновление каждые 30 секунд
+        let autoRefreshInterval;
+        
+        function toggleAutoRefresh() {
+            const checkbox = document.getElementById('autoRefresh');
+            if (checkbox.checked) {
+                autoRefreshInterval = setInterval(loadFeedbacks, 30000);
+            } else {
+                clearInterval(autoRefreshInterval);
+            }
+        }
+        
+        document.getElementById('autoRefresh').addEventListener('change', toggleAutoRefresh);
+        toggleAutoRefresh();
+        
+        // Первичная загрузка
+        loadFeedbacks();
+    </script>
+</body>
+</html>

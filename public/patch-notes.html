@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- SEO Meta Tags -->
+    <title>Все обновления Heroes of Newerth | HonHub</title>
+    <meta name="description" content="Полный список обновлений и патчей Heroes of Newerth. История изменений, новые герои, баланс, исправления — всё в одном месте.">
+    <meta name="keywords" content="Heroes of Newerth, HoN, обновления, патчи, история версий, HoN патчи">
+    <meta name="author" content="HonHub">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Russian">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Все обновления Heroes of Newerth">
+    <meta property="og:description" content="Полный список обновлений и патчей Heroes of Newerth">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="HonHub">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a2e;
+            font-family: 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        h1 {
+            font-size: clamp(28px, 5vw, 44px);
+            font-weight: 700;
+            text-align: center;
+            color: #ffd700;
+            background: linear-gradient(135deg, #432975 0%, #2a1a4a 100%);
+            padding: 20px 16px;
+            border-bottom: 4px solid #00fff2;
+            letter-spacing: 1px;
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        .patches-container {
+            flex: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            width: 100%;
+        }
+
+        .patches-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        /* ===== PATCH CARD ===== */
+        .patch-card {
+            text-decoration: none;
+            width: calc(33.333% - 20px);
+            min-width: 250px;
+            max-width: 350px;
+            background: #2d2d44;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: block;
+        }
+
+        .patch-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .patch-card:active {
+            transform: translateY(-2px);
+        }
+
+        .patch-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            background-color: #1a1a2e;
+        }
+
+        .patch-title {
+            font-size: 32px;
+            font-weight: 800;
+            text-align: center;
+            color: #ffd700;
+            background-color: #e64a2e;
+            padding: 16px 12px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        /* ===== NAVIGATION ===== */
+        .nav-wrapper {
+            text-align: center;
+            margin: 20px 0 10px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 32px;
+            background: #2d2d44;
+            border: 2px solid transparent;
+            border-image: linear-gradient(135deg, #840202, #0c5fcc, #d80b0b, #21b10a) 1;
+            border-radius: 50px;
+            color: #ffffffd0;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateY(-3px);
+            background: #3d3d5c;
+            color: #ffd700;
+        }
+
+        /* ===== FOOTER ===== */
+        .site-footer {
+            background: linear-gradient(135deg, #432975 0%, #2a1a4a 100%);
+            color: #ffd700;
+            text-align: center;
+            border-top: 4px solid #00fff2;
+            padding: 20px 16px;
+            margin-top: 40px;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            margin: 8px 0;
+            opacity: 0.9;
+        }
+
+        .footer-text:first-of-type {
+            margin-top: 0;
+        }
+
+        .footer-text:last-of-type {
+            margin-bottom: 0;
+        }
+
+        /* ===== BACK TO TOP BUTTON ===== */
+        #backToTop {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 50%;
+            background: #07099e;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #backToTop:hover {
+            background-color: #e64a2e;
+            transform: translateY(-4px);
+        }
+
+        /* ===== АДАПТИВНОСТЬ ===== */
+        @media (max-width: 1024px) {
+            .patch-card {
+                width: calc(50% - 20px);
+            }
+            
+            .patches-container {
+                padding: 20px 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                padding: 16px 12px;
+            }
+            
+            .patches-grid {
+                gap: 20px;
+            }
+            
+            .patch-card {
+                width: 100%;
+                max-width: 400px;
+            }
+            
+            .patch-title {
+                font-size: 28px;
+                padding: 12px;
+            }
+            
+            .back-link {
+                padding: 10px 24px;
+                font-size: 16px;
+            }
+            
+            .footer-text {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .patches-container {
+                padding: 16px 12px;
+            }
+            
+            .patch-title {
+                font-size: 24px;
+            }
+            
+            .back-link {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+            
+            #backToTop {
+                width: 44px;
+                height: 44px;
+                font-size: 22px;
+                bottom: 16px;
+                right: 16px;
+            }
+        }
+
+        /* Для очень высоких экранов (планшеты портрет) */
+        @media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+            .patches-grid {
+                justify-content: center;
+            }
+            
+            .patch-card {
+                width: 45%;
+            }
+        }
+
+        /* Для широких телефонов в ландшафте */
+        @media (max-width: 900px) and (orientation: landscape) {
+            .patches-grid {
+                gap: 15px;
+            }
+            
+            .patch-card {
+                width: calc(50% - 15px);
+                min-width: 200px;
+            }
+            
+            .patch-title {
+                font-size: 22px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Все обновления Heroes of Newerth</h1>
+    
+    <main class="patches-container">
+        <div class="patches-grid">
+            <a href="/0.10.0" class="patch-card" aria-label="Версия 0.10.0">
+                <img src="../logo/patch.webp" alt="Обновление HoN 0.10.0" class="patch-image" loading="lazy">
+                <div class="patch-title">0.10.0</div>
+            </a>
+            <!-- Здесь можно добавить больше патчей -->
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="nav-wrapper">
+            <a href="../../../heroes-of-newerth.html" class="back-link">
+                <i class="fa-regular fa-hand-point-left" aria-hidden="true"></i>
+                <span>Вернуться</span>
+            </a>
+        </div>
+        <p class="footer-text">
+            © 2026 HonHub - Энциклопедия Heroes of Newerth. Не является официальным ресурсом.
+        </p>
+        <p class="footer-text">
+            Heroes of Newerth является торговой маркой компании Kongor Studios. 
+            Все права на игровые материалы принадлежат их законным владельцам.
+        </p>
+    </footer>
+
+    <button id="backToTop" title="Наверх" aria-label="Наверх страницы">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script>
+        (function() {
+            const backToTop = document.getElementById('backToTop');
+            
+            if (backToTop) {
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        backToTop.classList.add('show');
+                    } else {
+                        backToTop.classList.remove('show');
+                    }
+                });
+                
+                backToTop.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Информация отсутствует | HonHub - Heroes of Newerth</title>
+    
+    <!-- SEO мета-теги -->
+    <meta name="description" content="Информация по данному персонажу Heroes of Newerth временно отсутствует или находится в разработке. Скоро мы добавим подробное описание героя.">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://honhub.ru/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0a0a1a 0%, #0f0f2a 50%, #1a1a3e 100%);
+            font-family: 'Rajdhani', sans-serif;
+            color: #fff;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* Анимированный фон */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+        
+        .bg-animation::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background: radial-gradient(circle, rgba(183, 127, 182, 0.15) 0%, transparent 70%);
+            animation: rotateBg 30s linear infinite;
+        }
+        
+        .bg-animation::after {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            top: -25%;
+            left: -25%;
+            background: radial-gradient(circle, rgba(100, 100, 200, 0.1) 0%, transparent 60%);
+            animation: rotateBgReverse 25s linear infinite;
+        }
+        
+        @keyframes rotateBg {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes rotateBgReverse {
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
+        }
+        
+        /* Падающие частицы */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            background: rgba(183, 127, 182, 0.4);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+        
+        @keyframes fall {
+            0% {
+                transform: translateY(-10vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 0.4;
+            }
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        /* Основной контент */
+        .container {
+            position: relative;
+            z-index: 10;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        
+        .card {
+            max-width: 700px;
+            width: 100%;
+            background: rgba(10, 10, 26, 0.75);
+            backdrop-filter: blur(20px);
+            border-radius: 48px;
+            padding: 50px 40px;
+            text-align: center;
+            border: 1px solid rgba(183, 127, 182, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(183, 127, 182, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            animation: fadeInUp 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            transition: all 0.4s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(183, 127, 182, 0.6);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(183, 127, 182, 0.2);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Иконка */
+        .icon-wrapper {
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .hero-icon {
+            font-size: 100px;
+            background: linear-gradient(135deg, #b77fb6 0%, #ff69b4 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter: drop-shadow(0 0 20px rgba(183, 127, 182, 0.5));
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .pulse-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 120px;
+            height: 120px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background: rgba(183, 127, 182, 0.2);
+            animation: pulseRing 2s ease-out infinite;
+        }
+        
+        @keyframes pulseRing {
+            0% {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1.4);
+                opacity: 0;
+            }
+        }
+        
+        /* Заголовок */
+        h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #fff 0%, #b77fb6 50%, #ff69b4 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 1px;
+        }
+        
+        /* Статус */
+        .status-badge {
+            display: inline-block;
+            background: rgba(255, 105, 180, 0.2);
+            border: 1px solid #ff69b4;
+            border-radius: 100px;
+            padding: 8px 20px;
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .status-badge i {
+            margin-right: 8px;
+            color: #ff69b4;
+        }
+        
+        /* Текст */
+        .message {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .submessage {
+            font-size: 1rem;
+            color: #a0a0c0;
+            margin-bottom: 35px;
+            border-top: 1px solid rgba(183, 127, 182, 0.2);
+            padding-top: 20px;
+        }
+        
+        /* Прогресс-бар */
+        .progress-section {
+            margin: 30px 0 25px;
+        }
+        
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 0.85rem;
+            color: #b77fb6;
+            letter-spacing: 1px;
+        }
+        
+        .progress-bar-container {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            width: 35%;
+            height: 100%;
+            background: linear-gradient(90deg, #b77fb6, #ff69b4);
+            border-radius: 10px;
+            position: relative;
+            animation: fillProgress 1.5s ease-out;
+            box-shadow: 0 0 10px rgba(183, 127, 182, 0.5);
+        }
+        
+        @keyframes fillProgress {
+            from { width: 0%; }
+            to { width: 35%; }
+        }
+        
+        /* Кнопки */
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 35px 0 20px;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 32px;
+            border-radius: 60px;
+            font-family: 'Orbitron', monospace;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            border: 1px solid rgba(183, 127, 182, 0.3);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #b77fb6, #8a5c8a);
+            border: none;
+            box-shadow: 0 4px 15px rgba(183, 127, 182, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(183, 127, 182, 0.4);
+            background: linear-gradient(135deg, #c88fc7, #9a6c9a);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(183, 127, 182, 0.2);
+            border-color: #b77fb6;
+            transform: translateY(-3px);
+        }
+        
+        .btn i {
+            font-size: 1.1rem;
+        }
+        
+        /* Предложения */
+        .suggest-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 30px;
+            border: 1px dashed rgba(183, 127, 182, 0.4);
+        }
+        
+        .suggest-box p {
+            font-size: 0.9rem;
+            color: #b0b0d0;
+            margin-bottom: 12px;
+        }
+        
+        .suggest-btn {
+            background: transparent;
+            border: 1px solid #b77fb6;
+            padding: 10px 24px;
+            font-size: 0.85rem;
+        }
+        
+        .suggest-btn:hover {
+            background: rgba(183, 127, 182, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        /* Случайные герои */
+        .random-heroes {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #8080aa;
+        }
+        
+        .random-heroes a {
+            color: #b77fb6;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.2s;
+        }
+        
+        .random-heroes a:hover {
+            color: #ff69b4;
+        }
+        
+        /* Мобильная адаптация */
+        @media (max-width: 768px) {
+            .card {
+                padding: 35px 25px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .message {
+                font-size: 1.1rem;
+            }
+            
+            .hero-icon {
+                font-size: 70px;
+            }
+            
+            .pulse-ring {
+                width: 90px;
+                height: 90px;
+            }
+            
+            .btn {
+                padding: 10px 22px;
+                font-size: 0.85rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .card {
+                padding: 25px 20px;
+            }
+            
+            h1 {
+                font-size: 1.4rem;
+            }
+            
+            .message {
+                font-size: 1rem;
+            }
+            
+            .buttons {
+                gap: 12px;
+            }
+            
+            .btn {
+                padding: 8px 18px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        /* Анимация для текста */
+        .glitch-text {
+            animation: glitch 3s infinite;
+        }
+        
+        @keyframes glitch {
+            0%, 100% { text-shadow: 0 0 0 transparent; }
+            95% { text-shadow: 0 0 0 transparent; }
+            96% { text-shadow: -2px 0 #ff69b4, 2px 0 #b77fb6; }
+            97% { text-shadow: 2px 0 #ff69b4, -2px 0 #b77fb6; }
+            98% { text-shadow: 0 0 0 transparent; }
+        }
+        
+        /* Скрытая кнопка для тоста */
+        .toast-message {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 12px 24px;
+            border-radius: 50px;
+            color: #fff;
+            font-size: 0.9rem;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+            pointer-events: none;
+            border: 1px solid #b77fb6;
+            white-space: nowrap;
+        }
+        
+        .toast-message.show {
+            transform: translateX(-50%) translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg-animation"></div>
+<div class="particles" id="particles"></div>
+
+<div class="container">
+    <div class="card">
+        <div class="icon-wrapper">
+            <div class="pulse-ring"></div>
+            <i class="fas fa-question-circle hero-icon"></i>
+        </div>
+        
+        <div class="status-badge">
+            <i class="fas fa-hourglass-half"></i> В РАЗРАБОТКЕ
+        </div>
+        
+        <h1 class="glitch-text">404 — ГЕРОЙ НЕ НАЙДЕН</h1>
+        
+        <div class="message">
+            По данному персонажу информация временно отсутствует
+        </div>
+        
+        <div class="submessage">
+            <i class="fas fa-feather-alt"></i> Мы работаем над наполнением энциклопедии<br>
+            Каждый герой получит подробное описание, гайды и стратегии
+        </div>
+        
+        <div class="progress-section">
+            <div class="progress-label">
+                <span><i class="fas fa-chart-line"></i> Прогресс наполнения</span>
+                <span>35%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <a href="/" class="btn btn-primary">
+                <i class="fas fa-home"></i> На главную
+            </a>
+            <a href="/heroes" class="btn btn-secondary">
+                <i class="fas fa-users"></i> Все герои
+            </a>
+            <button class="btn btn-secondary" id="suggestBtn">
+                <i class="fas fa-lightbulb"></i> Предложить
+            </button>
+        </div>
+        
+        <div class="suggest-box">
+            <p><i class="fas fa-envelope"></i> Знаете информацию об этом герое?</p>
+            <button class="btn suggest-btn" id="suggestFormBtn">
+                <i class="fas fa-pen-fancy"></i> Помогите нам заполнить энциклопедию
+            </button>
+        </div>
+        
+        <div class="random-heroes">
+            <i class="fas fa-random"></i> Другие герои:
+            <a href="/andromeda">Андромеда</a> •
+            <a href="/magebane">Магина</a> •
+            <a href="/accursed">Акурсед</a> •
+            <a href="/glacius">Гласиус</a> •
+            <a href="/pebbles">Пеблз</a>
+        </div>
+    </div>
+</div>
+
+<div id="toastMessage" class="toast-message">
+    <i class="fas fa-check-circle"></i> Спасибо! Мы учтем ваше предложение
+</div>
+
+<script>
+    // Создание падающих частиц
+    function createParticles() {
+        const container = document.getElementById('particles');
+        const particleCount = 60;
+        
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            const size = Math.random() * 4 + 2;
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDuration = Math.random() * 8 + 5 + 's';
+            particle.style.animationDelay = Math.random() * 10 + 's';
+            particle.style.opacity = Math.random() * 0.5 + 0.2;
+            container.appendChild(particle);
+        }
+    }
+    
+    createParticles();
+    
+    // Toast уведомление
+    function showToast(message, isSuccess = true) {
+        const toast = document.getElementById('toastMessage');
+        toast.innerHTML = `<i class="fas ${isSuccess ? 'fa-check-circle' : 'fa-info-circle'}"></i> ${message}`;
+        toast.classList.add('show');
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 3000);
+    }
+    
+    // Кнопка предложения
+    const suggestBtn = document.getElementById('suggestBtn');
+    const suggestFormBtn = document.getElementById('suggestFormBtn');
+    
+    function handleSuggest() {
+        // Открываем форму обратной связи на главной
+        window.location.href = '/#contactForm';
+        showToast('Переход к форме обратной связи', true);
+    }
+    
+    suggestBtn.addEventListener('click', handleSuggest);
+    suggestFormBtn.addEventListener('click', handleSuggest);
+    
+    // Динамическое изменение заголовка в зависимости от URL
+    function getHeroFromUrl() {
+        const path = window.location.pathname;
+        const heroName = path.split('/').pop().replace('.html', '').replace(/[_-]/g, ' ');
+        if (heroName && heroName !== '' && heroName !== 'heroes' && heroName !== 'dictionary') {
+            const titleElement = document.querySelector('h1');
+            const messageElement = document.querySelector('.message');
+            if (titleElement && heroName.length < 30) {
+                titleElement.innerHTML = `404 — ${heroName.toUpperCase()} НЕ НАЙДЕН`;
+                if (messageElement) {
+                    messageElement.innerHTML = `По герою «${heroName}» информация временно отсутствует`;
+                }
+            }
+        }
+    }
+    
+    getHeroFromUrl();
+    
+    // Добавляем эффект при наведении на карточку
+    const card = document.querySelector('.card');
+    if (card) {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = (y - centerY) / 30;
+            const rotateY = (centerX - x) / 30;
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+        });
+    }
+    
+    // Анимация для кнопок
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            if (this.id === 'suggestBtn' || this.id === 'suggestFormBtn') return;
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = e.clientX - rect.left - size/2 + 'px';
+            ripple.style.top = e.clientY - rect.top - size/2 + 'px';
+            ripple.style.position = 'absolute';
+            ripple.style.borderRadius = '50%';
+            ripple.style.background = 'rgba(255,255,255,0.4)';
+            ripple.style.transform = 'scale(0)';
+            ripple.style.transition = 'transform 0.4s ease-out';
+            this.style.position = 'relative';
+            this.style.overflow = 'hidden';
+            this.appendChild(ripple);
+            setTimeout(() => {
+                ripple.style.transform = 'scale(1)';
+                setTimeout(() => ripple.remove(), 400);
+            }, 10);
+        });
+    });
+</script>
+
+<!-- Стили для ripple эффекта -->
+<style>
+    .btn {
+        position: relative;
+        overflow: hidden;
+    }
+    .ripple {
+        position: absolute;
+        pointer-events: none;
+        animation: rippleFade 0.4s ease-out forwards;
+    }
+    @keyframes rippleFade {
+        from {
+            transform: scale(0);
+            opacity: 0.5;
+        }
+        to {
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+</style>
+</body>
+</html>

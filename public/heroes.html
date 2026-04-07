@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Все герои Heroes of Newerth | Полный список Легион и Хэллборн | HonHub</title>
+    <meta name="description" content="Полный список всех героев Heroes of Newerth: Легион и Хэллборн. Герои ловкости, интеллекта и силы. Описания, способности, гайды и советы по игре.">
+    <meta name="keywords" content="Heroes of Newerth, HoN, герои, Легион, Хэллборн, гайды, стратегии, ловкость, интеллект, сила, HonHub, все герои, список героев">
+    <meta name="author" content="HonHub">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Russian">
+    
+    <meta property="og:title" content="Все герои Heroes of Newerth | Полный список Легион и Хэллборн">
+    <meta property="og:description" content="Полный список всех героев Heroes of Newerth с разделением по фракциям и типам. Гайды, описания способностей и стратегии игры.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://honhub.ru/heroes">
+    <meta property="og:image" content="https://honhub.ru/logo/og-image.jpg">
+    <meta property="og:locale" content="ru_RU">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Все герои Heroes of Newerth | Полный список">
+    <meta name="twitter:description" content="Полный список всех героев Heroes of Newerth. Легион и Хэллборн, все типы героев.">
+    
+    <link rel="canonical" href="https://honhub.ru/heroes">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --font-title: 'Orbitron', sans-serif;
+            --font-body: 'Rajdhani', sans-serif;
+            --font-code: 'Share Tech Mono', monospace;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: #494545;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: var(--font-title);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: gold;
+        }
+
+        .subtitle {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        body > article {
+            width: 100%;
+            background-color: #565671;
+            border-top: 4px solid rgb(214, 227, 195);
+            border-bottom: 4px solid rgb(214, 227, 195);
+        }
+
+        body > article p {
+            width: 50%;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #2e2e97;
+            border-left: 4px solid rgb(214, 227, 195);
+            border-right: 4px solid rgb(214, 227, 195);
+            border-radius: 25px;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        body > article p span {
+            display: block;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        article {
+            width: 50%;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        article h2 {
+            margin: 12px 0;
+            padding: 10px;
+            font-family: var(--font-title);
+            background-color: #2c6669;
+            border-radius: 10px;
+        }
+
+        .bottomH2 {
+            min-height: 80px;
+        }
+
+        nav {
+            height: 50px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 15px 35px;
+            border-top: 5px solid #840202;
+            border-right: 5px solid #0c5fcc;
+            border-bottom: 5px solid #d80b0b;
+            border-left: 5px solid #21b10a;
+            border-radius: 35px;
+            color: #ffffffd0;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            transition: all 0.3s ease;
+            transform: translateY(-3px);
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 6px;
+            transition: transform 0.2s;
+        }
+
+        img:hover {
+            border: 2px solid greenyellow;
+            box-shadow: 0 0 10px greenyellow;
+            transform: scale(1.1);
+        }
+
+        .legionAgility,
+        .legionIntelligence,
+        .legionStrength,
+        .hellbourneAgility,
+        .hellbourneIntelligence,
+        .hellbourneStrength {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            border-radius: 18px;
+        }
+
+        .legionAgility,
+        .legionIntelligence,
+        .legionStrength {
+            background-color: rgb(121, 93, 104);
+        }
+
+        .hellbourneAgility,
+        .hellbourneIntelligence,
+        .hellbourneStrength {
+            background-color: rgb(85, 164, 137);
+        }
+
+        .legionAgility p,
+        .legionIntelligence p,
+        .legionStrength p,
+        .hellbourneAgility p,
+        .hellbourneIntelligence p,
+        .hellbourneStrength p {
+            margin-bottom: 7px;
+            font-family: var(--font-code);
+        }
+
+        .site-footer {
+            background: #333;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 2px solid #667eea;
+        }
+        
+        .footer-copyright {
+            margin-bottom: 10px;
+            color: gold;
+        }
+        
+        .footer-disclaimer {
+            color: gold;
+            font-size: 14px;
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 50%;
+            background: #07099e;
+            color: rgb(214, 205, 205);
+            font-size: 34px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #backToTop:hover {
+            background-color: #b51515;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 900px) {
+            body > article p {
+                width: 97%;
+                margin: 0 auto;
+                padding: 10px;
+                background-color: #2e2e97;
+                border-left: 4px solid rgb(214, 227, 195);
+                border-right: 4px solid rgb(214, 227, 195);
+                border-radius: 25px;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+
+            body > article p span {
+                display: block;
+                text-align: center;
+            }
+
+            img:hover {
+                border: none;
+                box-shadow: none;
+                transform: none;
+            }
+
+            #backToTop:hover {
+                background-color: #07099e;
+                transform: none;
+            }
+
+            .legionAgility div:hover,
+            .legionIntelligence div:hover,
+            .legionStrength div:hover,
+            .hellbourneAgility div:hover,
+            .hellbourneIntelligence div:hover,
+            .hellbourneStrength div:hover {
+                background-color: transparent;
+                transform: none;
+            }
+
+            .legionAgility div:hover p,
+            .legionIntelligence div:hover p,
+            .legionStrength div:hover p,
+            .hellbourneAgility div:hover p,
+            .hellbourneIntelligence div:hover p,
+            .hellbourneStrength div:hover p {
+                color: inherit;
+                font-size: inherit;
+                transform: none;
+            }
+
+            nav a:hover {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            main article section div{
+                border-top: 1px solid rgba(217, 215, 206, 0.934);
+                padding: 5px;
+                border-radius: 25px;
+            }
+
+            body > article p {
+                width: 98%;
+                margin: 0 auto;
+                padding: 10px;
+                background-color: #2e2e97;
+                border-left: 4px solid rgb(214, 227, 195);
+                border-right: 4px solid rgb(214, 227, 195);
+                border-radius: 25px;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+
+            body > article p span {
+                display: block;
+                text-align: center;
+            }
+
+            img:hover {
+                border: none;
+                box-shadow: none;
+                transform: none;
+            }
+
+            #backToTop:hover {
+                background-color: #07099e;
+                transform: none;
+            }
+
+            nav a:hover {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 320px) {
+            main article section div{
+                border-top: 1px solid rgba(217, 215, 206, 0.934);
+                padding: 5px;
+                border-radius: 25px;
+            }
+
+            body > article p {
+                width: 98%;
+                margin: 0 auto;
+                padding: 10px;
+                background-color: #2e2e97;
+                border-left: 4px solid rgb(214, 227, 195);
+                border-right: 4px solid rgb(214, 227, 195);
+                border-radius: 25px;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+
+            body > article p span {
+                display: block;
+                text-align: center;
+            }
+
+            main article section div{
+                border-top: 2px solid black;
+            }
+
+            img:hover {
+                border: none;
+                box-shadow: none;
+                transform: none;
+            }
+
+            #backToTop:hover {
+                background-color: #07099e;
+                transform: none;
+            }
+
+            nav a:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Все герои Heroes of Newerth",
+  "description": "Полный список всех героев игры Heroes of Newerth с разделением по фракциям (Легион и Хэллборн) и типам героев (ловкость, интеллект, сила).",
+  "url": "https://honhub.ru/heroes",
+  "numberOfItems": 120,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Андромеда",
+      "url": "https://honhub.ru/andromeda"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Арта",
+      "url": "https://honhub.ru/artillery"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Блиц",
+      "url": "https://honhub.ru/blitz"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Магина",
+      "url": "https://honhub.ru/magebane"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://honhub.ru/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Герои",
+      "item": "https://honhub.ru/heroes"
+    }
+  ]
+}
+</script>
+
+<header>
+    <h1>Все герои Heroes of Newerth</h1>
+    <p class="subtitle">Полный список персонажей Легиона и Хэллборн | Ловкость, Интеллект, Сила</p>
+</header>
+
+<article>
+    <p>
+        <span>Heroes of Newerth — как играть и побеждать</span><br>
+Карта в Heroes of Newerth устроена просто: есть три дороги (их называют линиями), два леса (по одному с каждой стороны) и река, которая 
+делит карту пополам. На этой странице вы найдёте всех героев Легиона и Адского воинства — две противоборствующие стороны.<br><br>
+
+🎯 Что нужно делать?<br>
+Главная цель — дойти до вражеской базы и разрушить главное здание (его называют «бараки» или «трон»).<br>
+
+Как это сделать:<br>
+
+Сначала нужно сломать три башни на одной из линий — они защищают подходы к базе.<br>
+
+Когда башни пали, открывается путь к главным баракам.<br>
+
+Как только главные бараки разрушены — игра закончена, вы победили!<br><br>
+
+🏆 А можно победить раньше?<br>
+Да! Если ваша команда сильно оторвалась в силе — например, один или несколько героев стали настолько мощными, что враги просто не могут с 
+ними справиться, — противник часто сдаётся. В этом случае игра заканчивается досрочно, без разрушения главного здания.<br><br>
+
+📌 Простыми словами:<br>
+
+Игра начинается с базы — там вы появляетесь и возрождаетесь после смерти.<br>
+
+Нужно двигаться по линиям, разрушать башни и защищать свои.<br>
+
+Чем больше вы уничтожили вражеских построек, тем ближе победа.<br>
+
+Главное — добраться до сердца вражеской базы и разбить его.
+</p>
+</article>
+
+<nav>
+    <a href="../../../heroes-of-newerth.html">
+        <span><i class="fa-regular fa-hand-point-left"></i></span> Вернуться
+    </a>
+</nav>
+
+<main>
+    <article>
+        <h2>Легион: ловкость</h2>
+        <section class="legionAgility">
+            <div>
+                <p>Андромеда</p>
+                <a href="/heroes/andromeda" title="Андромеда - герой ловкости Легиона"><img src="/images/andromeda.webp" alt="Андромеда - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Арта</p>
+                <a href="/hero-not-found" title="Арта - герой ловкости Легиона"><img src="/images/artillery.webp" alt="Арта - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Блиц</p>
+                <a href="/hero-not-found" title="Блиц - герой ловкости Легиона"><img src="/images/blitz.webp" alt="Блиц - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Драконик</p>
+                <a href="/hero-not-found" title="Драконик - герой ловкости Легиона"><img src="/images/draconis.webp" alt="Драконик - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Ева</p>
+                <a href="/hero-not-found" title="Ева - герой ловкости Легиона"><img src="/images/emerald.webp" alt="Ева - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Инженер</p>
+                <a href="/heroes/engineer" title="Инженер - герой ловкости Легиона"><img src="/images/engineer.webp" alt="Инженер - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Магина</p>
+                <a href="/heroes/magebane" title="Магина - герой ловкости Легиона"><img src="/images/mageban.webp" alt="Магина - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Моа</p>
+                <a href="/heroes/moa" title="Моа - герой ловкости Легиона"><img src="/images/moa.webp" alt="Моа - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Мойра</p>
+                <a href="/hero-not-found" title="Мойра - герой ловкости Легиона"><img src="/images/moira.webp" alt="Мойра - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Манки</p>
+                <a href="/heroes/monkey" title="Манки - герой ловкости Легиона"><img src="/images/monkey.webp" alt="Манки - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Мунка</p>
+                <a href="/heroes/moonqueen" title="Мунка - герой ловкости Легиона"><img src="/images/moonqueen.webp" alt="Мунка - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Нх</p>
+                <a href="/heroes/nighthound" title="Нх - герой ловкости Легиона"><img src="/images/nighthound.webp" alt="Нх - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Номад</p>
+                <a href="/heroes/nomad" title="Номад - герой ловкости Легиона"><img src="/images/nomad.webp" alt="Номад - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Скаут</p>
+                <a href="/heroes/scout" title="Скаут - герой ловкости Легиона"><img src="/images/scout.webp" alt="Скаут - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Силка</p>
+                <a href="/heroes/silhouette" title="Силка - герой ловкости Легиона"><img src="/images/silhouette.webp" alt="Силка - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Бензингтон</p>
+                <a href="/heroes/sirbenzington" title="Бензингтон - герой ловкости Легиона"><img src="/images/sirbenzington.webp" alt="Бензингтон - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Свифт</p>
+                <a href="/heroes/swiftblade" title="Свифт - герой ловкости Легиона"><img src="/images/swiftblade.webp" alt="Свифт - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Валька</p>
+                <a href="/heroes/valkyrie" title="Валька - герой ловкости Легиона"><img src="/images/valkyrie.webp" alt="Валька - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Вс</p>
+                <a href="/hero-not-found" title="Вс - герой ловкости Легиона"><img src="/images/wildsoul.webp" alt="Вс - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Зефир</p>
+                <a href="/heroes/zephyr" title="Зефир - герой ловкости Легиона"><img src="/images/zephyr.webp" alt="Зефир - герой ловкости Легиона Heroes of Newerth"></a>
+            </div>
+        </section>
+        
+        <h2>Легион: интеллект</h2>
+        <section class="legionIntelligence">
+            <div>
+                <p>Алуна</p>
+                <a href="/heroes/aluna" title="Алуна - герой интеллекта Легиона"><img src="/images/aluna.webp" alt="Алуна - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Бс</p>
+                <a href="/heroes/blacksmith" title="Бс - герой интеллекта Легиона"><img src="/images/blacksmith.webp" alt="Бс - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Бомбер</p>
+                <a href="/heroes/bombardier" title="Бомбер - герой интеллекта Легиона"><img src="/images/bombardier.webp" alt="Бомбер - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Бабл</p>
+                <a href="/heroes/bubbles" title="Бабл - герой интеллекта Легиона"><img src="/images/bubbles.webp" alt="Бабл - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Элониа</p>
+                <a href="/heroes/ellonia" title="Элониа - герой интеллекта Легиона"><img src="/images/ellonia.webp" alt="Элониа - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Эмпаз</p>
+                <a href="/heroes/empath" title="Эмпаз - герой интеллекта Легиона"><img src="/images/empath.webp" alt="Эмпаз - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Кинезис</p>
+                <a href="/heroes/hero-not-found" title="Кинезис - герой интеллекта Легиона"><img src="/images/kinesis.webp" alt="Кинезис - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Мартир</p>
+                <a href="/heroes/martyr" title="Мартир - герой интеллекта Легиона"><img src="/images/martyr.webp" alt="Мартир - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Монарх</p>
+                <a href="/heroes/monarch" title="Монарх - герой интеллекта Легиона"><img src="/images/monarch.webp" alt="Монарх - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Нимфора</p>
+                <a href="/heroes/hero-not-found" title="Нимфора - герой интеллекта Легиона"><img src="/images/nymphora.webp" alt="Нимфора - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Уги</p>
+                <a href="/heroes/hero-not-found" title="Уги - герой интеллекта Легиона"><img src="/images/oogie.webp" alt="Уги - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Офелия</p>
+                <a href="/heroes/ophelia" title="Офелия - герой интеллекта Легиона"><img src="/images/ophelia.webp" alt="Офелия - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Пёрл</p>
+                <a href="/heroes/pearl" title="Пёрл - герой интеллекта Легиона"><img src="/images/pearl.webp" alt="Пёрл - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Поли</p>
+                <a href="/heroes/pollywogpriest" title="Поли - герой интеллекта Легиона"><img src="/images/pollywogpriest.webp" alt="Поли - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Пиро</p>
+                <a href="/heroes/pyromancer" title="Пиро - герой интеллекта Легиона"><img src="/images/pyromancer.webp" alt="Пиро - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Рапсодия</p>
+                <a href="/heroes/rhapsody" title="Рапсодия - герой интеллекта Легиона"><img src="/images/rhapsody.webp" alt="Рапсодия - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Темпест</p>
+                <a href="/heroes/tempest" title="Темпест - герой интеллекта Легиона"><img src="/images/tempest.webp" alt="Темпест - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Чипер</p>
+                <a href="/heroes/thechipper" title="Чипер - герой интеллекта Легиона"><img src="/images/thechipper.webp" alt="Чипер - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Зевс</p>
+                <a href="/heroes/thunderbringer" title="Зевс - герой интеллекта Легиона"><img src="/images/thunderbringer.webp" alt="Зевс - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Виндикатор</p>
+                <a href="/heroes/vindicator" title="Виндикатор - герой интеллекта Легиона"><img src="/images/vindicator.webp" alt="Виндикатор - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Вич Слэер</p>
+                <a href="/heroes/witchslayer" title="Вич Слэер - герой интеллекта Легиона"><img src="/images/witchslayer.webp" alt="Вич Слэер - герой интеллекта Легиона Heroes of Newerth"></a>
+            </div>
+        </section>
+        
+        <h2 class="bottomH2">Легион: сила</h2>
+        <section class="legionStrength">
+            <div>
+                <p>Армадон</p>
+                <a href="/heroes/armadon" title="Армадон - герой силы Легиона"><img src="/images/armadon.webp" alt="Армадон - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Бегемот</p>
+                <a href="/heroes/behemoth" title="Бегемот - герой силы Легиона"><img src="/images/behemoth.webp" alt="Бегемот - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Берсеркер</p>
+                <a href="/heroes/berzerker.html" title="Берсеркер - герой силы Легиона"><img src="/images/berzerker.webp" alt="Берсеркер - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Брамбл</p>
+                <a href="/hero-not-found" title="Брамбл - герой силы Легиона"><img src="/images/bramble.webp" alt="Брамбл - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Дранкен</p>
+                <a href="/heroes/drunkenmaster" title="Дранкен - герой силы Легиона"><img src="/images/drunkenmaster.webp" alt="Дранкен - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Флакс</p>
+                <a href="/heroes/flux" title="Флакс - герой силы Легиона"><img src="/images/flux.webp" alt="Флакс - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Хамер</p>
+                <a href="/heroes/hammerstorm" title="Хамер - герой силы Легиона"><img src="/images/hammerstorm.webp" alt="Хамер - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Джера</p>
+                <a href="/heroes/jeraziah" title="Джера - герой силы Легиона"><img src="/images/jeraziah.webp" alt="Джера - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Кипер</p>
+                <a href="/heroes/keeperoftheforest" title="Кипер - герой силы Легиона"><img src="/images/keeperoftheforest.webp" alt="Кипер - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Лига</p>
+                <a href="/heroes/legionnaire" title="Лига - герой силы Легиона"><img src="/images/legionnaire.webp" alt="Лига - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Мидас</p>
+                <a href="/heroes/midas" title="Мидас - герой силы Легиона"><img src="/images/midas.webp" alt="Мидас - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Панда</p>
+                <a href="/heroes/pandamonium" title="Панда - герой силы Легиона"><img src="/images/pandamonium.webp" alt="Панда - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Пебл</p>
+                <a href="/heroes/pebbles" title="Пебл - герой силы Легиона"><img src="/images/pebbles.webp" alt="Пебл - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Пред</p>
+                <a href="/heroes/predator" title="Пред - герой силы Легиона"><img src="/images/predator.webp" alt="Пред - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Прист</p>
+                <a href="/hero-not-found" title="Прист - герой силы Легиона"><img src="/images/prisoner.webp" alt="Прист - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Рали</p>
+                <a href="/hero-not-found" title="Рали - герой силы Легиона"><img src="/images/rally.webp" alt="Рали - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Рампа</p>
+                <a href="/heroes/rampage" title="Рампа - герой силы Легиона"><img src="/images/rampage.webp" alt="Рампа - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Саломон</p>
+                <a href="/hero-not-found" title="Саломон - герой силы Легиона"><img src="/images/salomon.webp" alt="Саломон - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Солстик</p>
+                <a href="/heroes/solstice" title="Солстик - герой силы Легиона"><img src="/images/solstice.webp" alt="Солстик - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Гладиатор</p>
+                <a href="/heroes/thegladiator" title="Гладиатор - герой силы Легиона"><img src="/images/thegladiator.webp" alt="Гладиатор - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Тундра</p>
+                <a href="/heroes/tundra" title="Тундра - герой силы Легиона"><img src="/images/tundra.webp" alt="Тундра - герой силы Легиона Heroes of Newerth"></a>
+            </div>
+        </section>
+    </article>
+    
+    <article>
+        <h2>Хэллборн: ловкость</h2>
+        <section class="hellbourneAgility">
+            <div>
+                <p>Арахна</p>
+                <a href="/heroes/arachna" title="Арахна - герой ловкости Хэллборн"><img src="/images/arachna.webp" alt="Арахна - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Бх</p>
+                <a href="/heroes/bloodhunter" title="Бх - герой ловкости Хэллборн"><img src="/images/bloodhunter.webp" alt="Бх - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Башмак</p>   
+                <a href="/heroes/bushwaсk.html" title="Башмак - герой ловкости Хэллборн"><img src="/images/bushwack.webp" alt="Башмак - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Хронос</p>
+                <a href="/heroes/chronos" title="Хронос - герой ловкости Хэллборн"><img src="/images/chronos.webp" alt="Хронос - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Коруптед</p>
+                <a href="/heroes/corrupteddisciple" title="Коруптед - герой ловкости Хэллборн"><img src="/images/corrupteddisciple.webp" alt="Коруптед - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Дамп</p>
+                <a href="/heroes/dampeer" title="Дамп - герой ловкости Хэллборн"><img src="/images/dampeer.webp" alt="Дамп - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Фэйд</p>
+                <a href="/heroes/fayde" title="Фэйд - герой ловкости Хэллборн"><img src="/images/fayde.webp" alt="Фэйд - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Флинт</p>
+                <a href="/heroes/flintbeastwood" title="Флинт - герой ловкости Хэллборн"><img src="/images/flintbeastwood.webp" alt="Флинт - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Форса</p>
+                <a href="/heroes/forsakenarcher" title="Форса - герой ловкости Хэллборн"><img src="/images/forsakenarcher.webp" alt="Форса - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Гемини</p>
+                <a href="/heroes/gemini" title="Гемини - герой ловкости Хэллборн"><img src="/images/gemini.webp" alt="Гемини - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Гринекс</p>
+                <a href="/hero-not-found" title="Гринекс - герой ловкости Хэллборн"><img src="/images/grinex.webp" alt="Гринекс - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Ганблейд</p>
+                <a href="/heroes/gunblade" title="Ганблейд - герой ловкости Хэллборн"><img src="/images/gunblade.webp" alt="Ганблейд - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Кланк</p>
+                <a href="/heroes/klanx.html" title="Кланк - герой ловкости Хэллборн"><img src="/images/klanx.webp" alt="Кланк - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Св</p>
+                <a href="/heroes/sandwraith" title="Св - герой ловкости Хэллборн"><img src="/images/sandwraith.webp" alt="Св - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Шб</p>
+                <a href="/hero-not-found" title="Шб - герой ловкости Хэллборн"><img src="/images/shadowblade.webp" alt="Шб - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Слизер</p>
+                <a href="/heroes/slither" title="Слизер - герой ловкости Хэллборn"><img src="/images/slither.webp" alt="Слизер - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Соул</p>
+                <a href="/heroes/soulstealer" title="Соул - герой ловкости Хэллборн"><img src="/images/soulstealer.webp" alt="Соул - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Дл</p>
+                <a href="/hero-not-found" title="Дл - герой ловкости Хэллборн"><img src="/images/thedarklady.webp" alt="Дл - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Мэдмэн</p>
+                <a href="/heroes/madman" title="Мэдмэн - герой ловкости Хэллборн"><img src="/images/madman.webp" alt="Мэдмэн - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Трамбл</p>
+                <a href="/heroes/tremble.html" title="Трамбл - герой ловкости Хэллборн"><img src="/images/tremble.webp" alt="Трамбл - герой ловкости Хэллборн Heroes of Newerth"></a>
+            </div>
+        </section>
+        
+        <h2>Хэллборн: интеллект</h2>
+        <section class="hellbourneIntelligence">
+            <div>
+                <p>Артезия</p>
+                <a href="/hero-not-found" title="Артезия - герой интеллекта Хэллборн"><img src="/images/artesia.webp" alt="Артезия - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Цирка</p>
+                <a href="/hero-not-found" title="Цирка - герой интеллекта Хэллборн"><img src="/images/circe.webp" alt="Цирка - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Дефайлер</p>
+                <a href="/heroes/defiler" title="Дефайлер - герой интеллекта Хэллборн"><img src="/images/defiler.webp" alt="Дефайлер - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Шаман</p>
+                <a href="/heroes/dementedshaman" title="Шаман - герой интеллекта Хэллборн"><img src="/images/dementedshaman.webp" alt="Шаман - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Репа</p>
+                <a href="/heroes/doctorrepulsor" title="Репа - герой интеллекта Хэллборн"><img src="/images/doctorrepulsor.webp" alt="Репа - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Геомансер</p>
+                <a href="/heroes/geomancer" title="Геомансер - герой интеллекта Хэллборн"><img src="/images/geomancer.webp" alt="Геомансер - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Гласиус</p>
+                <a href="/heroes/glacius" title="Гласиус - герой интеллекта Хэллборн"><img src="/images/glacius.webp" alt="Гласиус - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Кипер</p>
+                <a href="/heroes/gravekeeper.html" title="Кипер - герой интеллекта Хэллборн"><img src="/images/gravekeeper.webp" alt="Кипер - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Хелбрингер</p>
+                <a href="/heroes/hellbringer" title="Хелбрингер - герой интеллекта Хэллборн"><img src="/images/hellbringer.webp" alt="Хелбрингер - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Мурмидон</p>
+                <a href="/heroes/myrmidon" title="Мурмидон - герой интеллекта Хэллборн"><img src="/images/myrmidon.webp" alt="Мурмидон - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Паразит</p>
+                <a href="/hero-not-found" title="Паразит - герой интеллекта Хэллборн"><img src="/images/parasite.webp" alt="Паразит - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Плага</p>
+                <a href="/heroes/plaguerider" title="Плага - герой интеллекта Хэллборн"><img src="/images/plaguerider.webp" alt="Плага - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Ворона</p>
+                <a href="/heroes/prophet" title="Ворона - герой интеллекта Хэллборн"><img src="/images/prophet.webp" alt="Ворона - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Папет</p>
+                <a href="/heroes/puppetmaster" title="Папет - герой интеллекта Хэллборн"><img src="/images/puppetmaster.webp" alt="Папет - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Рева</p>
+                <a href="/heroes/revenant" title="Рева - герой интеллекта Хэллборн"><img src="/images/revenant.webp" alt="Рева - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Рифт</p>
+                <a href="/heroes/riftwalker" title="Рифт - герой интеллекта Хэллборн"><img src="/images/riftwalker.webp" alt="Рифт - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Соул Рипер</p>
+                <a href="/heroes/soulreaper.html" title="Соул Рипер - герой интеллекта Хэллборн"><img src="/images/soulreaper.webp" alt="Соул Рипер - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Сукуба</p>
+                <a href="/heroes/succubus.html" title="Сукуба - герой интеллекта Хэллборн"><img src="/images/succubus.webp" alt="Сукуба - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Торт</p>
+                <a href="/heroes/torturer" title="Торт - герой интеллекта Хэллборн"><img src="/images/torturer.webp" alt="Торт - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Вуду</p>
+                <a href="/heroes/voodoojester" title="Вуду - герой интеллекта Хэллборн"><img src="/images/voodoojester.webp" alt="Вуду - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Хага</p>
+                <a href="/heroes/wretchedhag" title="Хага - герой интеллекта Хэллборн"><img src="/images/wretchedhag.webp" alt="Хага - герой интеллекта Хэллборн Heroes of Newerth"></a>
+            </div>
+        </section>
+        
+        <h2 class="bottomH2">Хеллборн: сила</h2>
+        <section class="hellbourneStrength">
+            <div>
+                <p>Акурсед</p>
+                <a href="/heroes/accursed" title="Акурсед - герой силы Хэллборн"><img src="/images/accursed.webp" alt="Акурсед - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Ра</p>
+                <a href="/heroes/amunra" title="Ра - герой силы Хэллборн"><img src="/images/amunra.webp" alt="Ра - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Бальфа</p>
+                <a href="/heroes/balphagore" title="Бальфа - герой силы Хэллборн"><img src="/images/balphagore.webp" alt="Бальфа - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Слон</p>
+                <a href="/hero-not-found" title="Слон - герой силы Хэллборн"><img src="/images/cthulhuphant.webp" alt="Слон - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Дедвуд</p>
+                <a href="/heroes/deadwood" title="Дедвуд - герой силы Хэллборн"><img src="/images/deadwood.webp" alt="Дедвуд - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Дева</p>
+                <a href="/heroes/devourer" title="Дева - герой силы Хэллборн"><img src="/images/devourer.webp" alt="Дева - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Электрик</p>
+                <a href="/heroes/electrician" title="Электрик - герой силы Хэллборн"><img src="/images/electrician.webp" alt="Электрик - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Гантеля</p>
+                <a href="/heroes/gauntlet" title="Гантеля - герой силы Хэллборн"><img src="/images/gauntlet.webp" alt="Гантеля - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Кракен</p>
+                <a href="/heroes/kraken" title="Кракен - герой силы Хэллборн"><img src="/images/kraken.webp" alt="Кракен - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Лоудстон</p>
+                <a href="/heroes/lodestone" title="Лоудстон - герой силы Хэллборн"><img src="/images/lodestone.webp" alt="Лоудстон - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Салфорис</p>
+                <a href="/hero-not-found" title="Салфорис - герой силы Хэллборн"><img src="/images/lordsalforis.webp" alt="Салфорис - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Магмус</p>
+                <a href="/heroes/magmus" title="Магмус - герой силы Хэллборн"><img src="/images/magmus.webp" alt="Магмус - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Маликен</p>
+                <a href="/hero-not-found" title="Маликен - герой силы Хэллборн"><img src="/images/maliken.webp" alt="Маликен - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Мораксус</p>
+                <a href="/heroes/moraxus" title="Мораксус - герой силы Хэллборн"><img src="/images/moraxus.webp" alt="Мораксус - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Пестиленс</p>
+                <a href="/heroes/pestilence" title="Пестиленс - герой силы Хэллборн"><img src="/images/pestilence.webp" alt="Пестиленс - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Фара</p>
+                <a href="/heroes/pharaoh" title="Фара - герой силы Хэллборн"><img src="/images/pharaoh.webp" alt="Фара - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Равенор</p>
+                <a href="/heroes/ravenor" title="Равенор - герой силы Хэллборн"><img src="/images/ravenor.webp" alt="Равенор - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Риптайд</p>
+                <a href="/hero-not-found" title="Риптайд - герой силы Хэллборн"><img src="/images/riptide.webp" alt="Риптайд - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+            <div>
+                <p>Вар бист</p>
+                <a href="/heroes/warbeast" title="Вар бист - герой силы Хэллборн"><img src="/images/warbeast.webp" alt="Вар бист - герой силы Хэллборн Heroes of Newerth"></a>
+            </div>
+        </section>
+    </article>
+</main>
+
+<nav>
+    <a href="../../../heroes-of-newerth.html">
+        <span><i class="fa-regular fa-hand-point-left"></i></span> Вернуться
+    </a>
+</nav>
+
+<footer class="site-footer">
+            <p class="footer-copyright">
+                © 2026 HonHub - Энциклопедия Heroes of Newerth. Не является официальным ресурсом.
+            </p>
+            <p class="footer-disclaimer">
+                Heroes of Newerth является торговой маркой компании Kongor Studios. 
+                Все права на игровые материалы принадлежат их законным владельцам.
+            </p>
+    <button id="backToTop" title="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</footer>
+
+<script>
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+        backToTop.classList.add('show');
+    } else {
+        backToTop.classList.remove('show');
+    }
+});
+backToTop.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+</script>
+</body>
+</html>

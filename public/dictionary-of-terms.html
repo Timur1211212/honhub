@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO мета-теги -->
+    <title>Глоссарий терминов Heroes of Newerth | Словарь игровых терминов HoN | HonHub</title>
+    <meta name="description" content="Полный глоссарий терминов Heroes of Newerth: основные игровые понятия, роли героев, стратегии, предметы и сленг. Словарь для новичков и опытных игроков HoN.">
+    <meta name="keywords" content="Heroes of Newerth, HoN, глоссарий, словарь терминов, игровые термины, HoN термины, ластхит, денай, ганк, керри, саппорт, роша, БКБ, HoN словарь, HonHub">
+    <meta name="author" content="HonHub">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Russian">
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Глоссарий терминов Heroes of Newerth | Словарь HoN">
+    <meta property="og:description" content="Полный словарь терминов Heroes of Newerth: от ластхита до командных боев. Все основные понятия игры в одном месте.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://honhub.ru/dictionary">
+    <meta property="og:image" content="https://honhub.ru/logo/og-dictionary.jpg">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="HonHub">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Глоссарий терминов Heroes of Newerth">
+    <meta name="twitter:description" content="Словарь игровых терминов HoN. Узнайте значение всех основных понятий игры.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://honhub.ru/dictionary">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <!-- Подключаем шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Rajdhani', 'Courier New', monospace;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding-bottom: 80px;
+        }
+        
+        /* Header */
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #b77fb6;
+        }
+        
+        .header h1 {
+            font-family: 'Orbitron', monospace;
+            color: #b77fb6;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 i {
+            margin-right: 15px;
+        }
+        
+        .header p {
+            color: #ccc;
+            font-size: 1.1em;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #b77fb6;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #ff69b4;
+            transform: translateX(-5px);
+        }
+        
+        /* Алфавитный указатель */
+        .alphabet {
+            max-width: 1000px;
+            margin: 30px auto 20px;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+        
+        .alpha-btn {
+            background: rgba(183, 127, 182, 0.3);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            font-family: 'Orbitron', monospace;
+        }
+        
+        .alpha-btn:hover, .alpha-btn.active {
+            background: #b77fb6;
+            transform: scale(1.1);
+        }
+        
+        /* Глоссарий */
+        .glossary-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .term-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            border-left: 4px solid #b77fb6;
+            animation: fadeInUp 0.5s ease;
+        }
+        
+        .term-card:hover {
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .term-name {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.8em;
+            color: #b77fb6;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        
+        .term-definition {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+        
+        .term-example {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 3px solid #4caf50;
+            font-style: italic;
+            color: #ccc;
+            margin-top: 10px;
+        }
+        
+        .term-example i {
+            color: #4caf50;
+            margin-right: 8px;
+        }
+        
+        /* Статистика */
+        .stats {
+            text-align: center;
+            padding: 20px;
+            color: #b77fb6;
+            font-size: 0.9em;
+        }
+        
+        /* Анимации */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background: rgba(51, 51, 51, 0.95);
+            padding: 12px;
+            font-size: 0.9em;
+            backdrop-filter: blur(5px);
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 80px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #07099e;
+            color: rgb(214, 205, 205);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 34px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #backToTop:hover {
+            background-color: #b51515;
+            transform: translateY(-3px);
+        }
+        
+        /* Мобильная адаптивность */
+        @media (max-width: 900px) {
+            .term-card:hover {
+                transform: none !important;
+                background: rgba(255, 255, 255, 0.05) !important;
+                box-shadow: none !important;
+            }
+            
+            .alpha-btn:hover {
+                background: rgba(183, 127, 182, 0.3) !important;
+                transform: none !important;
+            }
+            
+            .alpha-btn.active {
+                background: #b77fb6 !important;
+                transform: none !important;
+            }
+            
+            .back-link:hover {
+                color: #b77fb6 !important;
+                transform: none !important;
+            }
+            
+            #backToTop:hover {
+                background-color: #07099e !important;
+                transform: none !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .term-name {
+                font-size: 1.3em;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .term-card {
+                padding: 18px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .alpha-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 14px;
+            }
+            
+            .term-name {
+                font-size: 1.2em;
+            }
+            
+            .term-definition {
+                font-size: 0.95em;
+            }
+            
+            .header h1 {
+                font-size: 1.5em;
+            }
+            
+            .header p {
+                font-size: 0.9em;
+            }
+        }
+        
+        .letter-divider {
+            color: #b77fb6;
+            margin: 30px 0 15px 0;
+            font-family: 'Orbitron', monospace;
+            font-size: 2em;
+            border-bottom: 2px solid rgba(183, 127, 182, 0.3);
+            padding-bottom: 8px;
+        }
+        
+        .letter-divider:first-of-type {
+            margin-top: 0;
+        }
+        
+        .fa-book {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                text-shadow: 0 0 0 rgba(183, 127, 182, 0.7);
+            }
+            50% {
+                text-shadow: 0 0 10px rgba(183, 127, 182, 0.5);
+            }
+            100% {
+                text-shadow: 0 0 0 rgba(183, 127, 182, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Структурированные данные JSON-LD для словаря -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Глоссарий терминов Heroes of Newerth",
+  "description": "Полный словарь игровых терминов Heroes of Newerth. Все основные понятия игры: геймплей, роли героев, предметы и стратегии.",
+  "url": "https://honhub.ru/dictionary",
+  "numberOfItems": 36,
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Ластхит"},
+    {"@type": "ListItem", "position": 2, "name": "Денай"},
+    {"@type": "ListItem", "position": 3, "name": "Ганк"},
+    {"@type": "ListItem", "position": 4, "name": "Пуллинг"},
+    {"@type": "ListItem", "position": 5, "name": "Стакинг"},
+    {"@type": "ListItem", "position": 6, "name": "Вардинг"},
+    {"@type": "ListItem", "position": 7, "name": "Смок"},
+    {"@type": "ListItem", "position": 8, "name": "Роша"},
+    {"@type": "ListItem", "position": 9, "name": "Керри"},
+    {"@type": "ListItem", "position": 10, "name": "Саппорт"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://honhub.ru/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Словарь терминов",
+      "item": "https://honhub.ru/dictionary"
+    }
+  ]
+}
+</script>
+
+<div class="header">
+    <h1><i class="fas fa-book"></i> Глоссарий терминов</h1>
+    <p>Heroes of Newerth | Полный словарь игровых терминов и определений</p>
+    <a href="/" class="back-link"><i class="fas fa-arrow-left"></i> Вернуться на главную</a>
+</div>
+
+<div class="alphabet" id="alphabet"></div>
+
+<div class="glossary-container" id="glossaryContainer"></div>
+
+<div class="stats" id="stats"></div>
+
+<footer class="footer">
+    <p>© 2026 HonHub - Словарь терминов Heroes of Newerth</p>
+</footer>
+
+<button id="backToTop" title="Наверх">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    // База данных терминов на русском языке
+    const termsData = [
+        // Геймплей
+        { term: "Ластхит", definition: "Последний удар по крипу или герою, который приносит золото и опыт. Критически важный навык для фарма.", example: "Практикуйте ластхит, чтобы получать максимум золота на линии." },
+        { term: "Денай", definition: "Убийство своего союзного крипа или героя, чтобы противник не получил опыт и золото.", example: "Денай помогает контролировать линию и лишать опыта противника." },
+        { term: "Ганк", definition: "Внезапная атака на противника с целью убийства, обычно с участием нескольких героев.", example: "Роумер отправился на ганк на среднюю линию." },
+        { term: "Пуллинг", definition: "Привлечение нейтральных крипов к линии, чтобы отвлечь вражеских крипов и контролировать позицию линии.", example: "Саппорт делает пуллинг, чтобы помочь керри безопасно фармить." },
+        { term: "Стакинг", definition: "Накопление нейтральных крипов в лагере для более эффективного фарма.", example: "Стакните лагерь в 53 секунды, чтобы потом быстро его очистить." },
+        { term: "Вардинг", definition: "Установка вардов (стражей) для обзора карты и контроля ключевых точек.", example: "Хороший саппорт всегда занимается вардингом." },
+        { term: "Смок", definition: "Использование дым-варда для скрытного перемещения по карте без обнаружения вардами.", example: "Смок-ганк позволил незаметно подкрасться к врагу." },
+        { term: "Роша", definition: "Самый сильный нейтральный монстр на карте, убийство которого дает Эгиду (возрождение).", example: "Команда собралась на Рошана, чтобы получить Эгиду." },
+        
+        // Роли
+        { term: "Керри", definition: "Герой, который нуждается в большом количестве золота и опыта, чтобы стать сильным в поздней игре.", example: "Керри фармит на линии, пока саппорты его защищают." },
+        { term: "Саппорт", definition: "Герой, который помогает команде вардами, исцелением, контролем и не требует много золота.", example: "Саппорт купил варды и курицу для команды." },
+        { term: "Оффлайнер", definition: "Герой, играющий на сложной линии (оффлейн), часто с высокой живучестью.", example: "Оффлайнер держит линию, пока саппорт роумит." },
+        { term: "Мидер", definition: "Герой, играющий на центральной линии, часто с высоким потенциалом ганков.", example: "Мидер контролирует руны и помогает другим линиям." },
+        { term: "Роумер", definition: "Герой, который активно перемещается по карте и помогает другим линиям.", example: "Роумер постоянно создаёт давление на карте." },
+        { term: "Инициатор", definition: "Герой, который начинает командный бой, используя массовый контроль.", example: "Инициатор прыгнул в толпу и использовал ульту." },
+        
+        // Предметы
+        { term: "Сапоги", definition: "Базовый предмет, увеличивающий скорость передвижения. Существует множество улучшений.", example: "Большинство героев покупают ботинки в начале игры." },
+        { term: "БКБ", definition: "Black King Bar - предмет, дающий иммунитет к магии на время.", example: "Керри купил БКБ, чтобы не получить контроль от вражеских магов." },
+        { term: "Блинк", definition: "Предмет, позволяющий мгновенно телепортироваться на небольшое расстояние.", example: "Инициаторы часто покупают блинк для неожиданных атак." },
+        { term: "Эгида", definition: "Артефакт, дающий возможность возродиться после смерти. Выпадает с Рошана.", example: "Керри взял Эгиду и пошёл пушить." },
+        { term: "Курьер", definition: "Курьер, который доставляет предметы героям на линии.", example: "Не забудьте купить курьера в начале игры." },
+        { term: "ТП-скролл", definition: "Свиток телепортации, позволяющий переместиться к союзной постройке.", example: "Всегда носите с собой свиток телепортации." },
+        
+        // Стратегии
+        { term: "Пуш", definition: "Атака на вражеские башни с целью их разрушения.", example: "После убийства врагов команда пошла на пуш." },
+        { term: "Сплит-пуш", definition: "Стратегия, когда один герой пушит одну линию, пока остальные отвлекают внимание.", example: "Сплит-пуш заставляет врагов разрываться между линиями." },
+        { term: "Фарм", definition: "Процесс накопления золота и опыта на нейтральных крипах и линиях.", example: "Керри занят фармом, пока команда контролирует карту." },
+        { term: "Командный бой", definition: "Командный бой, в котором участвуют большинство героев обеих команд.", example: "Командный бой решит исход игры." },
+        
+        // Дополнительные термины
+        { term: "ММР", definition: "Matchmaking Rating - рейтинг игрока, используемый для подбора соперников.", example: "Мой ММР вырос после серии побед." },
+        { term: "Линия", definition: "Одна из трёх дорог на карте, по которой идут крипы и сражаются герои.", example: "Выберите удобную линию для вашего героя." },
+        { term: "Крипы", definition: "Нейтральные или вражеские юниты, которых убивают для получения золота и опыта.", example: "Убивайте крипов, чтобы фармить золото." },
+        { term: "Башня", definition: "Оборонительное сооружение, атакующее вражеских героев и крипов.", example: "Не атакуйте героя под башней - она наносит большой урон." },
+        { term: "Бараки", definition: "Здания на базе, разрушение которых усиливает крипов на соответствующей линии.", example: "Снесли бараки - теперь крипы станут сильнее." },
+        { term: "Ульта", definition: "Ультимейт - самое сильное способность героя, обычно с большим временем восстановления.", example: "Используйте ульту в командном бою." },
+        { term: "Фид", definition: "Преднамеренная или непреднамеренная смерть героя, дающая преимущество врагам.", example: "Старайтесь не фидить, чтобы не усиливать противника." },
+        { term: "Сноуболл", definition: "Эффект снежного кома - когда один герой или команда получает преимущество и наращивает его.", example: "После нескольких убийств команда начала сноуболлиться." }
+    ];
+    
+    let currentLetter = "";
+    
+    // Генерация алфавита
+    function generateAlphabet() {
+        // Получаем все первые буквы терминов
+        const letters = [...new Set(termsData.map(term => term.term[0].toUpperCase()))].sort();
+        
+        const container = document.getElementById("alphabet");
+        container.innerHTML = '<div class="alpha-btn" data-letter="all">Все</div>';
+        
+        for (let char of letters) {
+            container.innerHTML += `<div class="alpha-btn" data-letter="${char}">${char}</div>`;
+        }
+        
+        // Добавляем обработчики
+        document.querySelectorAll(".alpha-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".alpha-btn").forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                currentLetter = btn.dataset.letter === "all" ? "" : btn.dataset.letter;
+                renderGlossary();
+            });
+        });
+    }
+    
+    // Рендеринг глоссария
+    function renderGlossary() {
+        // Фильтрация по букве
+        let filtered = termsData;
+        if (currentLetter) {
+            filtered = termsData.filter(term => term.term[0].toUpperCase() === currentLetter);
+        }
+        
+        const container = document.getElementById("glossaryContainer");
+        const stats = document.getElementById("stats");
+        
+        if (filtered.length === 0) {
+            container.innerHTML = `
+                <div style="text-align: center; padding: 50px; color: #b77fb6;">
+                    <i class="fas fa-search" style="font-size: 3em; margin-bottom: 15px;"></i>
+                    <p>Нет терминов на эту букву</p>
+                </div>
+            `;
+            stats.innerHTML = `📚 Найдено: 0 терминов из ${termsData.length}`;
+            return;
+        }
+        
+        // Группировка по первой букве
+        const grouped = {};
+        filtered.forEach(term => {
+            const firstLetter = term.term[0].toUpperCase();
+            if (!grouped[firstLetter]) grouped[firstLetter] = [];
+            grouped[firstLetter].push(term);
+        });
+        
+        // Сортируем буквы
+        const sortedLetters = Object.keys(grouped).sort();
+        
+        let html = "";
+        sortedLetters.forEach(letter => {
+            html += `<div class="letter-divider"><i class="fas fa-star-of-life"></i> ${letter}</div>`;
+            grouped[letter].forEach(term => {
+                html += `
+                    <div class="term-card" itemscope itemtype="https://schema.org/DefinedTerm">
+                        <div class="term-name" itemprop="name">${term.term}</div>
+                        <div class="term-definition" itemprop="description">${term.definition}</div>
+                        ${term.example ? `<div class="term-example"><i class="fas fa-lightbulb"></i> ${term.example}</div>` : ""}
+                    </div>
+                `;
+            });
+        });
+        
+        container.innerHTML = html;
+        stats.innerHTML = `📚 Всего терминов: ${termsData.length} | Показано: ${filtered.length} | Обновлено: март 2026`;
+    }
+    
+    // Инициализация
+    generateAlphabet();
+    renderGlossary();
+
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+</body>
+</html>

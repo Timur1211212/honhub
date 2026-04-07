@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте - Heroes of Newerth Энциклопедия</title>
+    <link rel="stylesheet" href="/css/stylesHeros.css">
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 10px;
+            color: #fff;
+        }
+        .about-container h1 {
+            color: #667eea;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .about-container h2 {
+            color: #764ba2;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 5px;
+        }
+        .about-container p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .about-container ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        .about-container li {
+            margin-bottom: 10px;
+        }
+        .disclaimer-box {
+            background: #2a2a2a;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .feature-card {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #444;
+        }
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-item {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+        }
+        .stat-label {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9em;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .back-link:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <a href="/" class="back-link">← На главную</a>
+        
+        <h1>О проекте Heroes of Newerth Энциклопедия</h1>
+        
+        <div class="disclaimer-box">
+            <p><strong>⚠️ Важно:</strong> Этот ресурс является неофициальной энциклопедией и не связан с разработчиками игры Heroes of Newerth.</p>
+        </div>
+        
+        <h2>Наша миссия</h2>
+        <p>
+            Heroes of Newerth Энциклопедия создана с целью предоставить игрокам 
+            исчерпывающую информацию об игре в удобном и доступном формате. 
+            Мы стремимся быть самым полным и актуальным ресурсом о HoN на русском языке.
+        </p>
+        
+        <h2>Что вы найдете на нашем сайте</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>🦸‍♂️ Герои</h3>
+                <p>Подробные описания всех героев, их способностей, характеристик и рекомендаций по игре</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚔️ Предметы</h3>
+                <p>Полная база данных предметов, артефактов и их комбинаций с описаниями и советами</p>
+            </div>
+            <div class="feature-card">
+                <h3>📚 Гайды</h3>
+                <p>Стратегии, тактики и советы от опытных игроков для улучшения вашей игры</p>
+            </div>
+            <div class="feature-card">
+                <h3>📖 Словарь</h3>
+                <p>Объяснение игровых терминов, аббревиатур и сленга, используемого в HoN сообществе</p>
+            </div>
+        </div>
+        
+        <h2>Статистика проекта</h2>
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">160+</div>
+                <div class="stat-label">Героев</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">200+</div>
+                <div class="stat-label">Предметов</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Гайдов</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Терминов</div>
+            </div>
+        </div>
+        
+        <h2>Наши принципы</h2>
+        <ul>
+            <li><strong>Точность:</strong> Мы проверяем всю информацию и регулярно обновляем контент</li>
+            <li><strong>Доступность:</strong> Информация представлена в понятном и удобном формате</li>
+            <li><strong>Актуальность:</strong> Мы следим за обновлениями игры и вовремя вносим изменения</li>
+            <li><strong>Сообщество:</strong> Мы открыты для обратной связи и предложений от игроков</li>
+        </ul>
+        
+        <h2>История проекта</h2>
+        <p>
+            Проект был запущен в 2024 году группой энтузиастов, которые любят Heroes of Newerth 
+            и хотят поделиться своими знаниями с сообществом. За время работы мы собрали 
+            огромную базу знаний и продолжаем развиваться.
+        </p>
+        
+        <h2>Технологии</h2>
+        <p>
+            Сайт разработан с использованием современных веб-технологий:
+        </p>
+        <ul>
+            <li>Node.js и Express.js для серверной части</li>
+            <li>HTML5, CSS3 и JavaScript для фронтенда</li>
+            <li>Адаптивный дизайн для всех устройств</li>
+            <li>Оптимизированная производительность</li>
+        </ul>
+        
+        <h2>Правовая информация</h2>
+        <div class="disclaimer-box">
+            <p>
+                <strong>Важное уведомление:</strong><br>
+                • Heroes of Newerth является торговой маркой компании Frostburn Studios<br>
+                • Данный сайт не является официальным ресурсом<br>
+                • Вся информация предоставлена в образовательных целях<br>
+                • Использование игровых материалов осуществляется в рамках Fair Use
+            </p>
+        </div>
+        
+        <h2>Поддержка проекта</h2>
+        <p>
+            Вы можете помочь развитию проекта:
+        </p>
+        <ul>
+            <li>Сообщать об ошибках и неточностях</li>
+            <li>Делиться информацией о проекте с другими игроками</li>
+            <li>Предлагать новые идеи и контент</li>
+            <li>Оставлять отзывы через форму обратной связи</li>
+        </ul>
+        
+        <h2>Контакты</h2>
+        <p>
+            Если у вас есть вопросы, предложения или вы нашли ошибку, пожалуйста, 
+            свяжитесь с нами через форму обратной связи на сайте.
+        </p>
+        
+        <h2>Благодарности</h2>
+        <p>
+            Мы благодарим сообщество Heroes of Newerth за поддержку и ценные советы, 
+            а также разработчиков Frostburn Studios за создание этой удивительной игры.
+        </p>
+        
+        <a href="/" class="back-link">← На главную</a>
+    </div>
+</body>
+</html>

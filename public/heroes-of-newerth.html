@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO мета-теги -->
+    <title>HonHub | Heroes of Newerth - Энциклопедия героев, гайды и предметы</title>
+    <meta name="description" content="HonHub - неофициальная энциклопедия Heroes of Newerth. Полные гайды по героям, описание предметов, словарь терминов, стратегии игры и советы для новичков и опытных игроков.">
+    <meta name="keywords" content="Heroes of Newerth, HoN, энциклопедия, гайды, герои, предметы, стратегии, словарь терминов, Легион, Хэллборн, HonHub">
+    <meta name="author" content="HonHub">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Russian">
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="HonHub | Heroes of Newerth - Полная энциклопедия">
+    <meta property="og:description" content="Все о Heroes of Newerth: герои, предметы, гайды, стратегии и словарь терминов. Помощь новичкам и опытным игрокам.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://honhub.ru/">
+    <meta property="og:image" content="https://honhub.ru/logo/og-image.jpg">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="HonHub">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HonHub | Heroes of Newerth Энциклопедия">
+    <meta name="twitter:description" content="Полная энциклопедия Heroes of Newerth: герои, предметы, гайды и словарь терминов.">
+    <meta name="twitter:image" content="https://honhub.ru/logo/twitter-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://honhub.ru/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <!-- Подключаем шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600&family=Share+Tech+Mono&display=swap" 
+          rel="stylesheet">
+    
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #333;
+            color: white;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: #b77fb68d;
+            border-bottom: 3px solid #18e3b4d6;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 37px;
+            color: gold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .main-article {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .info-article {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        .info-article i {
+            display: block;
+            font-size: 55px;
+            text-align: center;
+            margin: 15px 0 40px 0;
+        }
+        
+        .info-article p {
+            width: 60vw;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 24px;
+            background-color: #4caf50;
+            border: 6px solid rgba(103, 5, 103, 0.16);
+            border-radius: 25px;
+            padding: 25px;
+        }
+        
+        .section-card {
+            width: 35%;
+            height: 35vh;
+            margin: 10px;
+            background-color: bisque;
+            border: 6px solid #391339a0;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.5s ease;
+        }
+        
+        .section-card:hover {
+            background-color: #ba14baec;
+            border: none;
+            transform: translateY(-2px);
+        }
+        
+        .section-card p {
+            text-align: center;
+            text-decoration: none;
+            font-size: 36px;
+            color: black;
+            font-weight: 900;
+            margin: 0;
+            pointer-events: none;
+            transition: all 0.5s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Стили для формы */
+        .contact-form {
+            max-width: 600px;
+            margin: 30px auto;
+            width: 90%;
+        }
+        
+        .feedback-form {
+            background-color: #444;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            padding: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #b77fb6;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .form-group label i {
+            margin-right: 5px;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #b77fb6;
+            border-radius: 8px;
+            background-color: #555;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #ff69b4;
+            background-color: #666;
+            transform: translateY(-2px);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 180px;
+        }
+        
+        .form-group select {
+            cursor: pointer;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #b77fb6;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background-color: #ff69b4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .form-message {
+            display: none;
+            margin-bottom: 15px;
+        }
+
+        #message::placeholder {
+            color: white;
+        }
+        
+        .error-message {
+            background-color: #ff4444;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .success-message {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin: 0;
+            margin-top: 2px;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+        
+        .checkbox-group label {
+            flex: 1;
+            font-size: 14px;
+            line-height: 1.4;
+            color: #ccc;
+            cursor: pointer;
+            display: block;
+            margin-bottom: 0;
+        }
+        
+        .checkbox-group label a {
+            color: #b77fb6;
+            text-decoration: none;
+        }
+        
+        .checkbox-group label a:hover {
+            text-decoration: underline;
+            color: #ff69b4;
+        }
+        
+        .logo-img {
+            width: 62px;
+            height: 62px;
+            border-radius: 15px;
+            margin: 10px 10px 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        .logo-img:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .fa-hand-point-down {
+            animation: handPulse 1.5s ease-in-out infinite;
+            display: block;
+            font-size: 55px;
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #07099e;
+            color: rgb(214, 205, 205);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 34px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #backToTop:hover {
+            background-color: #b51515;
+            transform: translateY(-3px);
+        }
+        
+        .site-footer {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 2px solid #667eea;
+        }
+        
+        .footer-col a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .footer-col a:hover {
+            text-decoration: underline;
+            color: #b77fb6;
+        }
+        
+        .footer-copyright {
+            margin-bottom: 10px;
+            color: #888;
+        }
+        
+        .footer-disclaimer {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .footer-links {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        .footer-links a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .disclaimer {
+            background: #ff6b6b;
+            color: black;
+            padding: 15px;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        
+        @keyframes handPulse {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 0.7;
+            }
+            50% {
+                transform: translateY(10px) scale(1);
+                opacity: 1;
+                text-shadow: 0 0 10px #b77fb6;
+            }
+            100% {
+                transform: translateY(0) scale(1);
+                opacity: 0.7;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .section-card {
+                width: 39%;
+                height: 15vh;
+                margin: 10px;
+                border: 3px solid #391339a0;
+                padding: 20px 10px;
+            }
+            
+            .section-card:hover {
+                transform: none;
+                background-color: bisque;
+                border: 3px solid #391339a0;
+            }
+            
+            .section-card p {
+                font-size: 34px;
+            }
+            
+            .info-article p {
+                width: 96vw;
+                margin: 15px auto 0 auto;
+                font-size: 20px;
+                padding: 20px;
+            }
+            
+            .logo-img {
+                width: 50px;
+                height: 50px;
+                margin: 15px 8px 0 8px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            .feedback-form {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section-card {
+                width: 70%;
+                height: 13vh;
+                margin: 10px;
+                border: 3px solid #391339a0;
+                padding: 20px 10px;
+            }
+            
+            .section-card:hover {
+                transform: none;
+                background-color: bisque;
+            }
+            
+            .section-card p {
+                font-size: 34px;
+            }
+            
+            .info-article p {
+                width: 96vw;
+                margin: 15px auto 0 auto;
+                font-size: 20px;
+                padding: 20px;
+            }
+            
+            .logo-img {
+                width: 50px;
+                height: 50px;
+                margin: 15px 8px 0 8px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            .feedback-form {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .section-card p {
+                font-size: 24px;
+            }
+            
+            .info-article p {
+                font-size: 18px;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Структурированные данные JSON-LD для главной страницы -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "HonHub",
+  "url": "https://honhub.ru/",
+  "description": "Неофициальная энциклопедия Heroes of Newerth. Гайды по героям, описание предметов, словарь терминов и стратегии игры.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://honhub.ru/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://honhub.ru/"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HonHub",
+  "url": "https://honhub.ru/",
+  "logo": "https://honhub.ru/logo/i (1).webp",
+  "description": "Энциклопедия Heroes of Newerth с гайдами, описанием героев и предметов",
+  "sameAs": []
+}
+</script>
+
+<header>
+    <h1>Энциклопедия Heroes of Newerth</h1>
+    <a href="https://max.ru/join/XggJ1laE3wVLbj8emHeYd9t0B0LSOJU7e2j6VjzxXeU" target="_blank" rel="noopener noreferrer"><img class="logo-img" src="/logo/max.png" alt="логотип мессенджер макс"></a>
+    <a href="https://vk.com/club237010646" target="_blank" rel="noopener noreferrer"><img class="logo-img" src="/logo/vk.png" alt="логоитип вконтакте"></a>
+</header>
+
+<div class="main-article">
+    <a href="/guides" class="section-card" title="Гайды по Heroes of Newerth - стратегии и советы">
+        <p>Руководства</p>
+    </a>
+    <a href="/heroes" class="section-card" title="Все герои Heroes of Newerth - Легион и Хэллборн">
+        <p>Герои</p>
+    </a>
+    <a href="/items" class="section-card" title="Предметы Heroes of Newerth - полный список">
+        <p>Предметы</p>
+    </a>
+    <a href="/dictionary" class="section-card" title="Словарь терминов Heroes of Newerth">
+        <p>Словарь терминов</p>
+    </a>
+    <a href="/patch-notes" class="section-card last__a" title="Словарь терминов Heroes of Newerth">
+        <p>Обновления</p>
+    </a>
+</div>
+
+<div class="info-article">
+    <i class="fa-solid fa-hand-point-down"></i>
+    <p>На данном сайте представлены характеристики героев и предметов игры Heroes of Newerth. Также здесь вы найдёте мануалы для игры, 
+        в том числе для раскачки персонажа, а также по игре в группе. Друзья, просьба, если разбираетесь в игре, писать интересные 
+        истории и сценарии развития персонажей, игры и разного рода инструкции по игре.</p>
+    
+    <div class="contact-form">
+        <form class="feedback-form" id="contactForm">
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Ваше имя *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject"><i class="fas fa-tag"></i> Тема обращения *</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Выберите тему обращения</option>
+                    <option value="error">⚠️ Ошибка на сайте</option>
+                    <option value="suggestion">💡 Предложение по улучшению</option>
+                    <option value="content">📰 Вопрос по контенту</option>
+                    <option value="technical">⚙️ Технический вопрос</option>
+                    <option value="other">💬 Другое</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message"><i class="fas fa-comment"></i> Сообщение *</label>
+                <textarea id="message" name="message" required placeholder="Опишите ваш вопрос или предложение..."></textarea>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy">
+                    Я согласен с <a href="/privacy" target="_blank">политикой конфиденциальности</a> 
+                    и даю согласие на обработку моих персональных данных *
+                </label>
+            </div>
+            <div class="form-message" id="formMessage"></div>
+            
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Отправить сообщение
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="disclaimer">
+    ⚠️ ВАЖНО: Этот ресурс является неофициальной энциклопедией Heroes of Newerth и не связан с разработчиками игры.
+</div>
+
+<footer class="site-footer">
+            <p class="footer-copyright">
+                © 2026 HonHub - Энциклопедия Heroes of Newerth. Не является официальным ресурсом.
+            </p>
+            <p class="footer-disclaimer">
+                Heroes of Newerth является торговой маркой компании Kongor Studios. 
+                Все права на игровые материалы принадлежат их законным владельцам.
+            </p>
+            <p class="footer-links">
+                <a href="/privacy">Политика конфиденциальности</a> | 
+                <a href="/terms">Пользовательское соглашение</a>
+            </p>
+    <button id="backToTop" title="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</footer>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const form = e.target;
+        const submitBtn = form.querySelector('.submit-btn');
+        const messageDiv = document.getElementById('formMessage');
+        
+        function showMessage(text, type) {
+            messageDiv.innerHTML = `<div class="${type === 'error' ? 'error-message' : 'success-message'}">${text}</div>`;
+            messageDiv.style.display = 'block';
+            
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 5000);
+        }
+        
+        if (!form.privacy.checked) {
+            showMessage('❌ Необходимо согласиться с политикой конфиденциальности', 'error');
+            return;
+        }
+        
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
+        
+        try {
+            const formData = new FormData(form);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                subject: formData.get('subject'),
+                message: formData.get('message')
+            };
+            
+            const response = await fetch('/submit-feedback', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            });
+            
+            const result = await response.json();
+            
+            if (response.ok) {
+                showMessage('✅ Сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время.', 'success');
+                form.reset();
+            } else {
+                showMessage('❌ ' + (result.error || 'Ошибка при отправке сообщения'), 'error');
+            }
+        } catch (error) {
+            console.error('Ошибка:', error);
+            showMessage('❌ Ошибка соединения. Попробуйте позже.', 'error');
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Отправить сообщение';
+        }
+    });
+
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+</body>
+</html>

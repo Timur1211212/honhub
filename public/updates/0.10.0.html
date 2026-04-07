@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>HoN 0.10.0 — Примечания к патчу | Heroes of Newerth обновление</title>
+    <meta name="title" content="HoN 0.10.0 — Примечания к патчу: Дампир, наставничество и маркетплейс">
+    <meta name="description" content="Полный обзор патча 0.10.0 Heroes of Newerth: новый герой Дампир — вампир-кэрри, система наставничества для новичков, внутриигровой маркетплейс, доска Plinko Frostfield II и множество исправлений. Дата выхода: 19 марта 2026.">
+    <meta name="keywords" content="Heroes of Newerth, HoN, патч 0.10.0, обновление HoN, Дампир, новый герой, наставничество HoN, маркетплейс HoN, Frostfield II, Plinko HoN, примечания к патчу, HoN новости">
+    <meta name="author" content="HonHub">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="Russian">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://honhub.ru/patches/0-10-0">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="HoN 0.10.0 — Примечания к патчу: Дампир, наставничество и маркетплейс">
+    <meta property="og:description" content="Новый герой-вампир Дампир, система обучения новичков, торжище между игроками и доска Plinko Frostfield II — всё о патче 0.10.0 Heroes of Newerth.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://honhub.ru/patches/0-10-0">
+    <meta property="og:image" content="https://honhub.ru/assets/hon-patch-0-10-0-og.jpg">
+    <meta property="og:image:alt" content="HoN патч 0.10.0 — новый герой Дампир">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="HonHub — Энциклопедия Heroes of Newerth">
+    <meta property="article:published_time" content="2026-03-19T10:00:00+03:00">
+    <meta property="article:modified_time" content="2026-03-19T10:00:00+03:00">
+    <meta property="article:section" content="Обновления игры">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HoN 0.10.0 — Примечания к патчу: Дампир, наставничество и маркетплейс">
+    <meta name="twitter:description" content="Новый герой-вампир Дампир, система обучения новичков, торжище между игроками и доска Plinko Frostfield II — всё о патче 0.10.0 Heroes of Newerth.">
+    <meta name="twitter:image" content="https://honhub.ru/assets/hon-patch-0-10-0-og.jpg">
+    <meta name="twitter:site" content="@honhub">
+
+    <!-- Favicon и Apple Touch Icon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Structured Data / JSON-LD для статьи -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "HoN 0.10.0 — Примечания к патчу: Дампир, наставничество и маркетплейс",
+      "description": "Полный обзор патча 0.10.0 Heroes of Newerth: новый герой Дампир — вампир-кэрри, система наставничества для новичков, внутриигровой маркетплейс, доска Plinko Frostfield II и множество исправлений.",
+      "datePublished": "2026-03-19T10:00:00+03:00",
+      "dateModified": "2026-03-19T10:00:00+03:00",
+      "author": {
+        "@type": "Organization",
+        "name": "HonHub",
+        "url": "https://honhub.ru"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "HonHub",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://honhub.ru/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://honhub.ru/patches/0-10-0"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://honhub.ru/assets/hon-patch-0-10-0-og.jpg"
+      },
+      "keywords": "Heroes of Newerth, патч 0.10.0, Дампир, наставничество, маркетплейс HoN"
+    }
+    </script>
+
+    <!-- Structured Data для BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://honhub.ru"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Примечания к патчам",
+          "item": "https://honhub.ru/patches"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Патч 0.10.0",
+          "item": "https://honhub.ru/patches/0-10-0"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            line-height: 1.5;
+            font-size: 18px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background-color: #333;
+            color: #fff;
+        }
+
+        h1 {
+            border-bottom: 1px dotted rgb(195, 195, 215);
+            background-color: #b9430d8f;
+            color: gold;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+
+        h2 {
+            padding: 3px;
+            border-radius: 8px;
+            background-color: #434441;
+            color: #15ea6bdd;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+
+        .article__1 {
+            width: 70%;
+            margin: 10px auto 0;
+        }
+
+        .article__1 section:first-child {
+            text-align: center;
+        }
+
+        .article__1 section:last-child {
+            margin-top: 20px;
+        }
+
+        .article__1 h2 {
+            text-align: center;
+        }
+
+        .article__2 {
+            width: 70%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .article__2 section:first-child {
+            width: 65%;
+            padding: 20px;
+            border-left: 3px rgb(85, 214, 253) solid;
+            border-radius: 25px;
+            background-color: #1fab6fa6;
+        }
+
+        .article__2 section:last-child {
+            width: 33%;
+            padding: 20px;
+            border: 2px rgb(85, 214, 253) solid;
+            border-radius: 25px;
+            background-color: #1fab6fa6;
+        }
+
+        .article__2 section:last-child p {
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            font-size: 0.85em;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px 3%;
+        }
+
+        .skills h2 {
+            width: 100%;
+        }
+
+        .skills section {
+            width: 40%;
+            padding: 25px;
+            border: 1px rgb(85, 214, 253) solid;
+            border-radius: 25px;
+            background-color: #1fab6fa6;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .skills section p span:first-child {
+            padding: 0 3px 0 3px;
+            border-radius: 5px;
+            background-color: #434441;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            color: aqua;
+        }
+
+        .skills section p span:last-child {
+            width: 100%;
+            margin-top: 8px;
+            padding: 8px 12px;
+            display: inline-block;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.3);
+            font-family: 'JetBrains Mono', monospace;
+            color: #e0e0e0;
+        }
+
+        .article__3 {
+            margin-top: 20px;
+            padding: 20px;
+            border-top: 10px solid rgba(22, 105, 207, 0.933);
+            border-bottom: 10px solid rgba(22, 105, 207, 0.933);
+            background-color: rgb(113, 3, 118);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 52px 0;
+        }
+
+        .article__3 section {
+            width: 30%;
+            min-height: 300px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #575252;
+            box-shadow: 0 4px 12px white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .article__3 p {
+            margin-top: 15px;
+        }
+
+        .article__4 {
+            padding: 20px;
+            border-bottom: 10px solid rgba(22, 105, 207, 0.933);
+            background-color: rgb(113, 3, 118);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 52px 0;
+        }
+
+        .article__4 section {
+            width: 30%;
+            min-height: 300px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #575252;
+            box-shadow: 0 4px 12px white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .article__4 p {
+            margin-top: 15px;
+        }
+
+        .article__4 section:last-child p:last-of-type {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 16px;
+            background: rgba(0, 0, 0, 0.3);
+            font-family: 'Inter', sans-serif;
+            font-style: italic;
+            color: #f0f0f0;
+        }
+
+        footer {
+            padding: 30px 0 30px 0;
+            text-align: center;
+            color: gold;
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 50%;
+            background: #07099e;
+            color: rgb(214, 205, 205);
+            font-size: 34px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #backToTop:hover {
+            background-color: #b51515;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 1280px) {
+            .article__1 {
+                width: 90%;
+                margin: 10px auto 0;
+            }
+
+            .article__1 section:first-child p {
+                text-align: center;
+            }
+
+            .article__1 section:last-child p {
+                margin-top: 20px;
+            }
+
+            .article__2 {
+                width: 98%;
+                margin: 30px auto;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .article__2 section:first-child {
+                width: 63%;
+                padding: 10px;
+            }
+
+            .article__2 section:last-child {
+                width: 35%;
+                padding: 10px;
+            }
+
+            .skills {
+                gap: 28px 3%;
+            }
+
+            .skills h2 {
+                width: 100%;
+            }
+
+            .skills section {
+                width: 47%;
+                padding: 15px 7px;
+            }
+
+            .skills section p span:first-child {
+                padding: 0;
+            }
+
+            .article__3 {
+                margin-top: 20px;
+                padding: 20px 0;
+                gap: 42px 0;
+            }
+
+            .article__3 section {
+                width: 48%;
+                padding: 0 0 15px 0;
+            }
+
+            .article__3 h2 {
+                border-radius: 0px;
+            }
+
+            .article__3 p {
+                margin: 0 10px;
+            }
+
+            .article__4 {
+                margin-top: 20px;
+                padding: 20px 0;
+                gap: 42px 0;
+            }
+
+            .article__4 section {
+                width: 48%;
+                padding: 0 0 15px 0;
+            }
+
+            .article__4 h2 {
+                border-radius: 0px;
+            }
+
+            .article__4 p {
+                margin: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .article__1 {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .article__2 {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 25px 0;
+            }
+
+            .article__2 section:first-child,
+            .article__2 section:last-child {
+                width: 98%;
+                border-top: 3px rgb(85, 214, 253) solid;
+                border-radius: 25px;
+            }
+
+            .skills {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 25px 0;
+            }
+
+            .skills section {
+                width: 98%;
+                padding: 25px 5px;
+                border: 3px rgb(85, 214, 253) solid;
+            }
+
+            .skills section p span:first-child {
+                padding: 0 3px 0 3px;
+                border-radius: 5px;
+                background-color: #434441;
+                font-family: 'JetBrains Mono', monospace;
+                font-weight: 600;
+                font-size: 1.05em;
+                letter-spacing: -0.3px;
+                color: aqua;
+            }
+
+            .skills section p span:last-child {
+                width: 100%;
+                margin-top: 8px;
+                padding: 8px 12px;
+                display: inline-block;
+                border-radius: 12px;
+                background: rgba(0, 0, 0, 0.3);
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 0.85em;
+                color: #e0e0e0;
+            }
+
+            .article__3 {
+                padding: 15px 0 20px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 25px 0;
+            }
+
+            .article__3 section {
+                width: 98%;
+                min-height: 300px;
+                padding: 0 0 15px 0;
+            }
+
+            .article__3 p {
+                margin: 0 5px;
+            }
+
+            .article__4 {
+                padding: 15px 0 20px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 25px 0;
+            }
+
+            .article__4 section {
+                width: 98%;
+                min-height: 300px;
+                padding: 0 0 15px 0;
+            }
+
+            .article__4 p {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Примечания к патчу 0.10.0</h1> 
+    <article class="article__1">
+        <section>
+            <p>Восстание Дампира, новый путь для начинающих, обновлённые лавки и торжища, пересмотренные правила сдачи и наказаний, а также дары 
+                для ценителей прекрасного</p>
+            <p><time datetime="2026-03-19">19 марта 2026 года</time></p>
+        </section>
+        <section>
+            <h2>О том, что важнее всего</h2>
+            <p>Разработчики Heroes of Newerth опубликовали примечания к обновлению, и я, едва переведя дыхание, спешу поделиться с вами самым 
+                сокровенным. Патч 0.10.0 оказался на редкость щедрым на новшества.</p>
+        </section>
+    </article>
+    <article class="article__2">
+        <section> 
+            <h2>Дампир: хищник, пьющий души</h2>
+            <p>На поля сражений выходит новый герой — существо из ночных кошмаров, ловкий охотник ближнего боя, чья сила возрастает с каждой 
+                поглощённой Эссенцией. Дампир не просто сражается — он терроризирует врагов взрывами первобытного ужаса, пронзает ряды противников 
+                вампирским полётом, исцеляясь на лету, окутывает союзников аурой кражи жизни и пожирает плоть врагов своим ультимейтом 
+                «Потребление», чтобы накапливать Эссенции, усиливающие все его умения. Этот герой щедро вознаграждает агрессивный, убийственный 
+                стиль игры. Но помните: смерть отнимает накопленное. На время этого цикла патчей Дампир защищён от банов, чтобы каждый желающий 
+                успел познать его природу.</p>
+        </section>
+        <section>
+            <h2>Природа Дампира</h2>
+            <p>Основной атрибут: Ловкость<br>
+                Тип атаки: Ближний бой<br>
+                Роли: Кэрри, центральная линия<br>
+                Телесная крепость (Сила): 21 (+2.0)<br>
+                Стремительность (Ловкость): 24 (+2.9)<br>
+                Мудрость (Интеллект): 16 (+1.4)<br>
+                Скорость передвижения: 305<br>
+                Броня: 2.68<br>
+                Магическая защита: 5.0<br>
+                Урон: 51–57<br>
+                Скорость атаки: 0.59
+            </p>
+        </section> 
+    </article>
+    <article class="skills">
+        <h2>Умения Дампира</h2>
+        <section>
+            <p><span>Терроризировать (Q)</span> — ужас вокруг себя<br>
+                Дампир внушает невыносимый страх ближайшим врагам. Они получают магический урон и на секунду теряют волю, беспорядочно бросаясь прочь с 
+                замедленной поступью. Каждая накопленная Эссенция делает этот ужас сильнее.<br>
+                <span>Стоимость маны: 75/85/95/105<br>
+                Время восстановления: 10 секунд<br>
+                Радиус: 250<br>
+                Урон: 75/125/175/225 магического урона<br>
+                Длительность страха: 1 секунда (снижение скорости передвижения на 50%)<br>
+                Эффект Эссенций: +40 урона и +0.25 секунды страха за каждую</span></p>
+        </section>
+        <section>
+            <p><span>Вампирский полёт (W)</span> — стремительный рывок<br>
+                Дампир устремляется к избранной цели, пронзая всех, кто встречается на пути. Каждое касание приносит врагам боль, а самому охотнику — 
+                живительное исцеление. Эссенции усиливают и ту, и другую силу.<br>
+                <span>Стоимость маны: 75<br>
+                Время восстановления: 13/12/11/10 секунд<br>
+                Дальность: 550/575/600/625<br>
+                Урон: 80/110/140/170 магического урона<br>
+                Лечение: 16/22/28/34 здоровья<br>
+                Эффект Эссенций: +30 урона и +10 лечения за каждую</span></p>
+        </section>
+        <section>
+            <p><span>Кровожадность (E)</span> — аура вампиризма<br>
+                Вокруг Дампира разливается незримая аура, дарящая союзникам способность восстанавливать здоровье в бою. Ближние бойцы получают полную 
+                меру этого дара, дальние — лишь малую толику. Переключая режим, можно выбрать, действует ли благословение на всех союзных существ или 
+                только на героев. Сам же Дампир обретает неистовую скорость атаки, и каждая Эссенция ускоряет его ещё больше.<br>
+                <span>Радиус: 650<br>
+                Кража жизни (ближние союзники): 15/20/25/30%<br>
+                Кража жизни (дальние союзники): 2.5/5/7.5/10%<br>
+                Пассивный эффект для Дампира: +15 скорости атаки за каждую Эссенцию</span></p>
+        </section>
+        <section>
+            <p><span>Потребление (R)</span> — ультимейт, пожирающий плоть<br>
+                Дампир впивается в плоть врага, нанося сокрушительный магический урон и исцеляясь от каждой капли выпитой крови. Этот укус мгновенно 
+                убивает простых существ, а каждое применение приносит Эссенцию. Если же жертвой падает вражеский герой, Дампир получает сразу три 
+                Эссенции. Но смерть — удел всех живых: погибая, охотник теряет часть накопленной силы.<br>
+                <span>Уровни ультимейта: 6, 11, 16<br>
+                Стоимость маны: 100<br>
+                Время восстановления: 30 секунд<br>
+                Дальность: 150<br>
+                Максимум Эссенций: 3<br>
+                Урон: 200/300/400 магического урона<br>
+                Лечение: равно нанесённому урону<br>
+                Дополнительный урон от Эссенций: 30/50/70 за каждую<br>
+                Получение Эссенций: +1 за использование, +3 при убийстве героя<br>
+                Потеря при смерти: 1 Эссенция<br>
+                Посох Мастера: Дампир обретает истинное могущество. Лимит Эссенций возрастает с трёх до шести. Если смерть настигает его, когда накоплено 
+                более трёх Эссенций, он теряет лишь две вместо одной.</span></p>
+        </section>
+    </article>
+    <article class="article__3">
+        <section>
+            <h2>Наставничество для новичков</h2>
+            <p>Разработчики даровали Ньюэрту совершенно новую систему обучения. Теперь каждый, кто впервые ступает на эту землю, может пройти через 
+                серию интерактивных уроков, где шаг за шагом постигает основы: от управления и нажатия клавиш до ролей героев, предметов, рун и карты.<br>
+                Вернуться к этим наставлениям можно в любой миг — все материалы ждут на особой вкладке. Поначалу новички играют ограниченным пулом героев, 
+                соответствующим выбранной роли, чтобы осваиваться в своём ритме.<br>
+                Особый значок, видимый всем остальным, отличает начинающего путника. Если встретите такого в бою — помогите ему. Развитие сообщества 
+                начинается с приветствия новичков.</p>
+        </section>
+        <section>
+            <h2>Внутриигровая лавка красоты</h2>
+            <p>В Heroes of Newerth открылся совершенно новый магазин косметики. Здесь, среди изящных витрин и великолепных превью, можно приобрести 
+                альтернативных аватаров, дикторов, курьеров, насмешки и многое иное. Каждый предмет украшен своей степенью редкости: Обычный, Редкий, 
+                Эпический, Легендарный. Просмотр товаров стал интуитивно понятным, а процесс покупки — истинным удовольствием.</p>
+        </section>
+        <section>
+            <h2>Торжище между игроками</h2>
+            <p>Новый маркетплейс распахнул свои ворота. Отныне каждый может выставить косметические сокровища на продажу, просматривать объявления 
+                других игроков, изучать историю продаж и колебания цен. Плата платформы и проекта отображается прозрачно, управление листингом — создание, изменение цены, удаление — доступно в несколько касаний. Весь процесс покупки не покидает пределов игрового клиента. А грядущие события Marketplace Mania подарят возможность ограниченной по времени торговли.</p>
+        </section>
+        <section>
+            <h2>Классический облик лавки</h2>
+            <p>Для тех, кто хранит верность истокам, разработчики вернули классический дизайн магазина — тот самый, из оригинального релиза HoN. И 
+                современный, и классический варианты ныне поддерживают назначение клавиш для быстрой навигации по категориям. Новый переключатель 
+                позволяет выбирать между классической и современной категоризацией предметов независимо от выбранного облика лавки.</p>
+        </section>
+        <section>
+            <h2>О наказаниях и праве на сдачу</h2>
+            <p>Те, кто покидает матчи без предупреждения, отныне встречают более строгие наказания. Игроков, оставленных без внимания, можно изгнать 
+                из матча голосованием.<br>
+                Голосование за признание поражения вернулось, но обставлено более суровыми условиями, нежели прежде. Призвать к сдаче можно лишь в двух 
+                случаях:<br>
+                если в вашей команде есть бездействующий игрок (даже если он уже изгнан);<br>
+                если ваша команда столь безнадёжно отстала от противника, что чудо камбэка почти невозможно.</p>
+        </section>
+        <section>
+            <h2>Новая доска Plinko — Frostfield II</h2>
+            <p>Появилась новая доска Plinko, украшенная десятью альтернативными аватарами, охватывающими все степени редкости. Билеты — в дело, и все 
+                сокровища ваши. А то, что окажется лишним, можно выставить на торжище.<br>
+                Легендарный:
+                Скаут Фростфилда<br>
+                Эпические:
+                Ледяная Нимфора<br>
+                Rebirth Hammerstorm<br>
+                Редкие:
+                Убийца Тамплиеров<br>
+                Инфицированный Скользящий<br>
+                Обычные:
+                Флорал Эллония<br>
+                Охотник на Кровь Зверей<br>
+                Демонический Безумный Шаман<br>
+                Свана Валькирия<br>
+                Фроствуд</p>
+        </section>
+    </article>
+    <article class="article__4">
+        <section>
+            <h2>Исправления героев и игрового процесса</h2>
+            <p>Пророк — «Общая судьба» теперь правильно применяется к союзникам, облачённым в магический иммунитет.<br>
+                Пожиратель — горячая клавиша подспособности «Ущелье» теперь корректно отображается на значке умения.<br>
+                Мирмидон — атакующий снаряд Мефисто Мирмидона более не безмолвствует, воспроизводя нужные звуки при попадании.<br>
+                Скаут — исправлены визуальные и звуковые эффекты удара.<br>
+                Рейвенор — обновлена иконка героя, и отныне его можно забанить на этапе выбора.</p>
+        </section>
+        <section>
+            <h2>Общие исправления</h2>
+            <p>Подсказки способностей при наведении теперь показывают верную информацию о непрокаченных умениях.<br>
+                Телепортацию теперь можно нажать (но не применить!) во время смерти, позволяя заранее подготовить цель перед возрождением.<br>
+                Исправлена ошибка ассиста: ранее наложение дебаффа без нанесения хотя бы 10% максимального здоровья врага не приносило заслуженной помощи.</p>
+        </section>
+        <section>
+            <h2>Исправления ошибок и прочее</h2>
+            <p>Стабильность клиента<br>
+                Исправлены многочисленные сбои клиента, связанные с различными внутриигровыми действиями.<br>
+                Устранены сбои на стороне сервера, вызванные определением сущностей и управлением состоянием юнитов.<br>
+                Решена проблема, когда крупные пакеты данных вызывали рассинхронизацию состояния или сбои, особенно при слабом сетевом соединении.</p>
+        </section>
+        <section>
+            <h2>Интерфейс</h2>
+            <p>Клавиша «Отмена» (Esc) теперь корректно отменяет способности в режиме каста, а не раскрывает внутриигровое меню.<br>
+                Список друзей теперь обновляется сразу после принятия заявки.<br>
+                Исправлена ошибка, когда предметы нельзя было переместить в другие слоты, пока курсор зависал над недействительными юнитами за интерфейсом слота предметов.<br>
+                Устранён случай, когда быстрое нажатие «Открыть магазин» (B) и пробела (центрирование камеры) заставляло камеру следовать за выбранным юнитом.<br>
+                Всплывающие подсказки после отправки пинга теперь корректно закрываются во время наблюдения за игроком.</p>
+        </section>
+        <section>
+            <h2>Игровой процесс</h2>
+            <p>Индикаторы нейтральных лагерей больше не выглядят как белые квадраты в начале игры при прямом просмотре или в повторах.<br>
+                Исправлены звуковые фрагменты для пингов по союзным и вражеским башням.<br>
+                Аудиофрагменты матча больше не продолжают звучать после отключения от игры.</p>
+            <p>Вот таким предстало передо мной обновление 0.10.0. Дампир уже ждёт своего часа, новички готовятся ступить на путь, а маркетплейс обещает стать местом, где рождаются сделки. Всё это случилось 19 марта 2026 года. Теперь слово за игроками.</p>
+        </section>
+    </article>
+    <footer>
+        <p>
+            © 2026 HonHub - Энциклопедия Heroes of Newerth. Не является официальным ресурсом.
+        </p>
+        <p>
+            Heroes of Newerth является торговой маркой компании Kongor Studios. 
+            Все права на игровые материалы принадлежат их законным владельцам.
+        </p>
+        <button id="backToTop" title="Наверх">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script>
+        var backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

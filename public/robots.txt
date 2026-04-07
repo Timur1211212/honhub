@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Основные директории
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /heroes/
+
+# Запрещаем доступ к админ панели и системным файлам
+Disallow: /secure-panel-2024-internal-access
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://honhub.ru/sitemap.xml
+
+# Host для Яндекса
+Host: https://honhub.ru
+
+# Crawl-delay для уважения к серверу
+Crawl-delay: 1

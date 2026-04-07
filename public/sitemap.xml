@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- ========== ГЛАВНАЯ СТРАНИЦА ========== -->
+    <url>
+        <loc>https://honhub.ru/</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- ========== ОСНОВНЫЕ РАЗДЕЛЫ ========== -->
+    <url>
+        <loc>https://honhub.ru/heroes-of-newerth.html</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/heroes</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/items</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/guides</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/dictionary</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/patch-notes</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/about</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/privacy</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://honhub.ru/terms</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- ========== ГЕРОИ ЛЕГИОН - ЛОВКОСТЬ ========== -->
+    <url><loc>https://honhub.ru/heroes/andromeda</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/engineer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/magebane</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/moa</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/monkey</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/moonqueen</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/nighthound</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/nomad</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/scout</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/silhouette</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/sirbenzington</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/swiftblade</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/valkyrie</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/vindicator</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/zephyr</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    
+    <!-- ========== ГЕРОИ ЛЕГИОН - ИНТЕЛЛЕКТ ========== -->
+    <url><loc>https://honhub.ru/heroes/aluna</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/blacksmith</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/bombardier</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/bubbles</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/ellonia</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/empath</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/martyr</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/monarch</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/nymphora</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/ophelia</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/pearl</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/pollywogpriest</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/pyromancer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/rhapsody</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/tempest</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/thechipper</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/thunderbringer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/witchslayer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    
+    <!-- ========== ГЕРОИ ЛЕГИОН - СИЛА ========== -->
+    <url><loc>https://honhub.ru/heroes/armadon</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/behemoth</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/drunkenmaster</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/flux</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/hammerstorm</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/jeraziah</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/keeperoftheforest</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/legionnaire</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/midas</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/pandamonium</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/pebbles</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/predator</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/rampage</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/solstice</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/thegladiator</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/tundra</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    
+    <!-- ========== ГЕРОИ ХЭЛЛБОРН - ЛОВКОСТЬ ========== -->
+    <url><loc>https://honhub.ru/heroes/arachna</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/bloodhunter</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/chronos</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/corrupteddisciple</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/dampeer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/fayde</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/flintbeastwood</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/forsakenarcher</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/gemini</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/gunblade</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/madman</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/sandwraith</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/slither</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/soulstealer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    
+    <!-- ========== ГЕРОИ ХЭЛЛБОРН - ИНТЕЛЛЕКТ ========== -->
+    <url><loc>https://honhub.ru/heroes/defiler</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/dementedshaman</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/doctorrepulsor</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/geomancer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/glacius</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/hellbringer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/myrmidon</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/plaguerider</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/prophet</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/puppetmaster</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/revenant</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/riftwalker</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/soulreaper</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/torturer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/voodoojester</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/wretchedhag</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    
+    <!-- ========== ГЕРОИ ХЭЛЛБОРН - СИЛА ========== -->
+    <url><loc>https://honhub.ru/heroes/accursed</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/amunra</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/deadwood</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/devourer</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/electrician</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/gauntlet</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/kraken</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/lodestone</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/magmus</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/moraxus</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/pestilence</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/pharaoh</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/ravenor</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://honhub.ru/heroes/warbeast</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    
+    <!-- ========== СТРАНИЦЫ ОБНОВЛЕНИЙ ========== -->
+    <url>
+        <loc>https://honhub.ru/updates/0.10.0</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- ========== СЛУЖЕБНЫЕ СТРАНИЦЫ ========== -->
+    <url>
+        <loc>https://honhub.ru/hero-not-found</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.1</priority>
+    </url>
+    
+</urlset>
